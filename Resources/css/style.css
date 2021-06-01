@@ -561,6 +561,9 @@ section.de-active {
 /* ABOUT ME SECTION */
 /*-------------------------------------------*/
 
+.about-me {
+    background-color: var(--gray-color);
+}
 .grad-pic {
     width: 100%;
 }

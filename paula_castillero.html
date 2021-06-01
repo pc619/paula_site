@@ -745,7 +745,7 @@
         </div>
 
         <div class="row">
-            <form>
+            <form action="https://formspree.io/f/xpzkdylo" method="POST">
                 <div class="col span-1-of-2">
                     <div class="entry">
                         <label id="name-label" for="name">Name</label>   
@@ -755,12 +755,12 @@
                 <div class="col span-1-of-2">
                     <div class="entry">
                         <label id = "email-label" for="email">Email</label>   
-                        <input label="email-label" name="email" id="email" type="text" class="feedback-input" placeholder="" />
+                        <input type="email" name="_replyto"label="email-label" id="email" type="text" class="feedback-input" placeholder="" />
                     </div>  
                 </div>
                 <div class="entry">
-                    <label id="text-label" for="comments">Your message</label>
-                    <textarea label="text-label" name="comments" id="comments" class="feedback-input" placeholder=""></textarea>  
+                    <label id="text-label" for="comments" >Your message</label>
+                    <textarea  name="message" label="text-label" id="comments" class="feedback-input" placeholder=""></textarea>  
                 </div>
                 <input id="submit" type="submit" value="Send"/>
             </form>

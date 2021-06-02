@@ -26,20 +26,20 @@ $(document).ready(function () {
 
 $(window).resize(function () {
     vw = $("body").innerWidth();
-    currExp = 0;
-    $(".carousel").stop().animate({
-        scrollLeft: $(".carousel").scrollLeft() - $(".carousel").scrollLeft()
-    }, 700);
+    // currExp = 0;
+    // $(".carousel").stop().animate({
+    //     scrollLeft: $(".carousel").scrollLeft() - $(".carousel").scrollLeft()
+    // }, 700);
 
-    if ($(".carousel").scrollLeft() !== 0) {
-        $("#backward-exp").removeClass("invisible");
-    }
+    // if ($(".carousel").scrollLeft() !== 0) {
+    //     $("#backward-exp").removeClass("invisible");
+    // }
 
-    if ($(".carousel").scrollLeft() >= 2.5*0.58*vw) {
-        $("#forward-exp").addClass("invisible");
-    } else {
-        $("#forward-exp").removeClass("invisible");
-    }
+    // if ($(".carousel").scrollLeft() >= 2.5*0.58*vw) {
+    //     $("#forward-exp").addClass("invisible");
+    // } else {
+    //     $("#forward-exp").removeClass("invisible");
+    // }
 });
 
 

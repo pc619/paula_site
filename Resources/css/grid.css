@@ -9,19 +9,22 @@
 
 /*  GROUPING  ============================================================================= */
 
-.row, .project-row {
+.row, .project-row, .row-for-bullets {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 .row:before,
 .row:after,
 .project-row:before,
-.project-row:after{
+.project-row:after,
+.row-for-bullets:before,
+.row-for-bullets:after{
     content: "";
     display: table;
 }
 .row:after,
-.project-row:after {
+.project-row:after,
+.row-for-bullets:after {
     clear: both;
 }
 
@@ -87,7 +90,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 	.span-3-of-3 {
 		width: 100%; 
 	}
@@ -269,7 +272,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
 	.span-7-of-7 {
 		width: 100%; 
 	}
@@ -291,7 +294,7 @@
 	.span-1-of-7 {
 		width: 100%; 
 	}
-}
+} */
 
 
 /*  GRID OF EIGHT   ============================================================================= */
@@ -332,7 +335,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
 	.span-8-of-8 {
 		width: 100%; 
 	}
@@ -357,7 +360,7 @@
 	.span-1-of-8 {
 		width: 100%; 
 	}
-}
+} */
 
 
 /*  GRID OF NINE   ============================================================================= */

@@ -706,7 +706,7 @@ section.de-active {
 
 .timeline {
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .timeline:before {
@@ -810,6 +810,9 @@ section.de-active {
     margin-bottom: 8px;
     margin-top: 5px;
     font-size: 90%;
+}
+.timeline-item h4 {
+    margin-bottom: 0;
 }
 
 .plain-h3:before {
@@ -944,7 +947,7 @@ section.de-active {
 }
 
 .carousel-container {
-    width: 500vw;
+    width: 5000vw;
     height: auto;  
 }
 
@@ -1332,7 +1335,9 @@ textarea {
 /* Row */
 
 .project-row {
-    margin: 0 120px; /* 120px margin on sides */
+    max-width: 1080px;
+    /* margin: 0 120px; 120px margin on sides */
+    margin: auto;
     position: relative;
 }
 
@@ -1483,8 +1488,6 @@ textarea {
 .row-for-bullets {
     margin-bottom: 10px;
     height: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .col-for-bullets {
@@ -1598,7 +1601,7 @@ textarea {
 
 .project-info-holder h3 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .project-row.small p.last-para {

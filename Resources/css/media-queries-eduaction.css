@@ -1,0 +1,70 @@
+@media all and (max-width:1140px) {
+    .school-logo {
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .timeline-content .plain-h3 {
+        font-size: 80%;
+    }
+
+    .tag {
+        font-size: 60%;
+    }
+}
+
+
+@media all and (max-width: 900px) {
+
+    .row.timeline {
+        padding: 0;
+        padding-left: 10%;
+    }
+
+    .timeline:before {
+        left: 0;
+    }
+    
+    .timeline-content {
+        width: 100%;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        float: left;
+        clear: both;
+    }
+    
+    .timeline-item:nth-child(even) .date {
+        float: left;
+        clear: both;
+    }
+    
+    .timeline-img {
+        left: 0;
+    }
+}
+    
+@media all and (max-width: 500px) {
+
+    .timeline-item .date {
+        font-size: 180%;
+    }
+
+    .timeline-content .plain-h3 {
+        font-size: 70%;
+    }
+
+    .education .row.for-timeline {
+        padding: 0 30px;
+    }
+
+    .row.timeline {
+        padding: 0;
+        padding-left: 7%;
+    }
+
+    .timeline {
+        margin-top: 20px;
+    }
+}

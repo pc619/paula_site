@@ -6,8 +6,12 @@
 
 
 let vw = $("body").innerWidth();
+let expArray = $('.work-exp');
+let currExp = 0;
+let maxExp = expArray.length - 1;
 
 $(document).ready(function () {
+    currExp = 0;
     initFunct();
 
     $("#projects-grid").isotope({
@@ -22,6 +26,7 @@ $(document).ready(function () {
 
 $(window).resize(function () {
     vw = $("body").innerWidth();
+    currExp = 0;
     $(".carousel").stop().animate({
         scrollLeft: $(".carousel").scrollLeft() - $(".carousel").scrollLeft()
     }, 700);
@@ -98,15 +103,58 @@ const initFunct = function () {
 
     // Scrolling through experience carousel
 
+
     $(".work-exp").click(function () {
         $(".work-exp").each(function() {
             $(this).addClass("hover");
         });
         const id = $(this);
+        const proportion = id.offset().left;
+
+        if (proportion > 0){
+            currExp += 1;
+        }
+        else {
+            currExp -= 1;
+        }
+
         id.removeClass("hover");
         $(".carousel").animate({
-            scrollLeft: id.offset().left + $(".carousel").scrollLeft() - 0.25*vw
+            scrollLeft: id.offset().left + $(".carousel").scrollLeft() - (((vw - id.innerWidth())/(2*vw))*vw)
         }, 500);
+    });
+
+    $(".carousel").on('swiped-left', function() {
+        if ((currExp + 1)<=maxExp) {
+            console.log(currExp);
+            $(".work-exp").each(function() {
+                $(this).addClass("hover");
+            });
+            const id = expArray[currExp + 1];
+            console.log(id);
+            currExp += 1;
+
+            $(id).removeClass("hover");
+            $(".carousel").animate({
+                scrollLeft: $(id).offset().left + $(".carousel").scrollLeft() - (((vw - $(id).innerWidth())/(2*vw))*vw)
+            }, 500);
+        }
+
+    });
+
+    $(".carousel").on('swiped-right', function() {
+        console.log(currExp);
+        if ((currExp - 1)>=0){
+            $(".work-exp").each(function() {
+                $(this).addClass("hover");
+            });
+            const id = expArray[currExp - 1];
+            currExp -= 1;
+            $(id).removeClass("hover");
+            $(".carousel").animate({
+                scrollLeft: $(id).offset().left + $(".carousel").scrollLeft() - (((vw - $(id).innerWidth())/(2*vw))*vw)
+            }, 500);
+        }
     });
 
     // Contact labels

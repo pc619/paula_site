@@ -41,6 +41,7 @@ const find_prev_page = function(strCurrentPage, arrProjectArray) {
 
 const initFunct = function () {
     const projectArray = [
+        "nintendo_rev.html",
         "gizmo_fourse.html",
         "tandem_bike.html",
         "acasa.html",
@@ -48,7 +49,7 @@ const initFunct = function () {
         "angard.html",
         "quizzard.html",
         "shazam_rebrand.html",
-        "intro_to_des.html",
+        "first_portfolio.html",
         "grocity.html"
     ];
 

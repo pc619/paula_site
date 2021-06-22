@@ -1,6 +1,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">  
     <!-- Style Sheets -->
     <link rel="stylesheet" type="text/css" href="Resources/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
@@ -10,9 +13,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-experience.css">
     
     <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">    
+      
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
@@ -23,22 +24,126 @@
 <body>
     <div class="menu-bar">
         <ul class="main-nav">
-            <li><a href="#" id="idabout-id" class="nav-btn">About Me</a></li>
-            <li><a href="#" id="idprojects-id" class="nav-btn">My projects</a></li>
-            <li><a href="#" id="ideducation-id" class="nav-btn">My education journey</a></li>
-            <li><a href="#" id="idwork-id" class="nav-btn">Some of my experience</a></li>
-            <li><a href="#" id="idskills-id" class="nav-btn">Skills I've developped</a></li>
-            <li><a href="#" id="idcontact-id" class="nav-btn">Contact me!</a></li>
+            <li><a href="#" to="idabout-id" class="nav-btn">About Me</a></li>
+            <li><a href="#" to="idprojects-id" class="nav-btn">My projects</a></li>
+            <li><a href="#" to="ideducation-id" class="nav-btn">My education journey</a></li>
+            <li><a href="#" to="idwork-id" class="nav-btn">Some of my experience</a></li>
+            <li><a href="#" to="idskills-id" class="nav-btn">Skills I've developped</a></li>
+            <li><a href="#" to="idcontact-id" class="nav-btn">Contact me!</a></li>
         </ul>
             
     </div>
+    <section id="header" class="header">
+
+        <div class="header-square">
+            <ul class="main-nav">
+                <li><a href="#" to="2idabout-id" class="nav-btn">About Me</a></li>
+                <li><a href="#" to="2idprojects-id" class="nav-btn">My projects</a></li>
+                <li><a href="#" to="2ideducation-id" class="nav-btn">My education journey</a></li>
+                <li><a href="#" to="2idwork-id" class="nav-btn">Some of my experience</a></li>
+                <li><a href="#" to="2idskills-id" class="nav-btn">Skills I've developped</a></li>
+                <li><a href="#" to="2idcontact-id" class="nav-btn">Contact me!</a></li>
+            </ul>
+
+        </div>
+
+        <h1 id="hi" data-paroller-factor="-0.5" 
+        data-paroller-factor-xs="-0.5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear">
+            Hi, I am
+        </h1>
+
+        <h1 id="who-am-I" data-paroller-factor="-0.5" 
+        data-paroller-factor-xs="-0.5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear">
+            
+        </h1>
+
+        <!-- <div class="scrolling-word" data-paroller-factor="10" 
+        data-paroller-factor-xs="10" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 10%; opacity: 0.6">
+            coding
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="13" 
+        data-paroller-factor-xs="12" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 20%;">
+            HCD
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 5%;">
+            spain
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 7%; opacity: 0.6;">
+            imperial
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 40%; bottom: -300px">
+            london
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 40%; bottom: -300px">
+            AI
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 45%; bottom: -700px">
+            madrid
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 40%; bottom: -700px">
+            UX
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 20%; bottom: -100px">
+            CAD
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="13" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 25%; bottom: -500px; opacity: 0.1;">
+            3D printing
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="3" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 5%; bottom: -300px">
+            adobe
+        </div> -->
+
+    </section>
     <!-------------------------------------------->
     <!-----------------ABOUT ME------------------->
     <!-------------------------------------------->
     <section id="about-id" class="about-me">
         <div class="row">
             <div class="heading-holder">
-                <h1 class="number-larger-white">01</h1>
+                <h1 class="number-larger-white" >01</h1>
                 <h2 class="slide-up-heading">About me</h2>
             </div>
         </div>
@@ -49,79 +154,6 @@
                     In the academic spectrum, I love designing both physical and digital products and using computing and engineering skills to make the designs a reality.
                     But, I also love horse riding, travelling and hiking!
                 </p><br>
-                <!-- <div class="journey-container">
-                    <div class="journey-timeline-item" date-is='16-04-2001'>
-                        <div class="timeline-heading-holder clearfix">
-                            <div class="col span-1-of-5">
-                                <img class="country-logo" src="Resources/img/spain.svg">
-                            </div>
-                            <div class="col span-4-of-5">
-                                <h3 class="plain-h3">Hello world!</h3>
-                                <p class="smaller-text">
-                                    I was born in Spain in 2001, where I lived for 10 years. I'll always love the great, great food that my country has to offer and the beautiful family culture.
-                                </p>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <div class="journey-timeline-item" date-is='10-12-2011'>
-                        <div class="timeline-heading-holder clearfix">
-                            <div class="col span-1-of-5">
-                                <img class="country-logo" src="Resources/img/uae-spain.svg">
-                            </div>
-                            <div class="col span-4-of-5">
-                                <h3 class="plain-h3">Bye, dad :(</h3>
-                                <p class="smaller-text">
-                                    In 2011 my dad moved to Dubai on his own, it was hard to be separated from my family for the first time.
-                                </p>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <div class="journey-timeline-item" date-is='10-12-2012'>
-                        <div class="timeline-heading-holder clearfix">
-                            <div class="col span-1-of-5">
-                                <img class="country-logo" src="Resources/img/uae.svg">
-                            </div>
-                            <div class="col span-4-of-5">
-                                <h3 class="plain-h3">Hello Dubai!</h3>
-                                <p class="smaller-text">
-                                    Then it was our turn to join him. It was a challenge to leave my family behind and I didn't even speak english.
-                                </p>
-                            </div> 
-                        </div>
-                    </div>
-
-                    <div class="journey-timeline-item" date-is='31-05-2019'>
-                        <div class="timeline-heading-holder clearfix">
-                            <div class="col span-1-of-5">
-                                <img class="country-logo" src="Resources/img/uae.svg">
-                            </div>
-                            <div class="col span-4-of-5">
-                                <h3 class="plain-h3">High school done</h3>
-                                <p class="smaller-text">
-                                   Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                   In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.
-                                </p>
-                            </div> 
-                        </div>
-                    </div>
-
-                    <div class="journey-timeline-item" date-is='31-05-2019'>
-                        <div class="timeline-heading-holder clearfix">
-                            <div class="col span-1-of-5">
-                                <img class="country-logo" src="Resources/img/uk.svg">
-                            </div>
-                            <div class="col span-4-of-5">
-                                <h3 class="plain-h3">From Dubai, to London</h3>
-                                <p class="smaller-text">
-                                  And now, here I am, studying Design Engineering at Imperial!
-                                </p>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                </div> -->
                 
             </div>
             <div class="col span-2-of-5 grad">
@@ -131,7 +163,7 @@
        
         
     </section>
-        <!-------------------------------------------->
+    <!-------------------------------------------->
     <!-----------------PORTFOLIO------------------>
     <!--------------------------------------------> 
     <section id="projects-id" class="projects">
@@ -167,16 +199,36 @@
         
 
         <div id="project-grid" class="row projects-container">
-            
-            <div class="university project" link_address="gizmo_fourse.html" next_link_address="tandem_bike.html" project-type="university">
+            <div class="university project" link_address="nintendo_rev.html" next_link_address="gizmo_fourse.html" project-type="university">
                 <div class="project-img">
-                    <img src="Resources/css/img/shazam-rebrand.png">
+                    <img src="Resources/img/project_imgs/nintendo_rev_cover 2.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
                         <div class="circle">
                             <div class="circle">
-                                <img src="Resources/img/shazam.png">
+                                <img src="Resources/img/project_imgs/nintendo_rev_logo-01.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Nintendo Rev</h3>
+                    <p class="project-date">Jan 2021 - June 2021</p>
+                    <p class="smaller-text">
+                       Nintendo inspired physical and virtual game to motivate children to do exercise at home.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="university project" link_address="gizmo_fourse.html" next_link_address="tandem_bike.html" project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/gizmo_project.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/fourse_logo-01.png">
                             </div>
                         </div>
                     </div>
@@ -193,12 +245,12 @@
 
             <div class="university project" link_address="tandem_bike.html" next_link_address="acasa.html" project-type="university">
                 <div class="project-img">
-                    <img src="Resources/css/img/angard-project.png">
+                    <img src="Resources/img/tandem_bike.JPG">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
                         <div class="circle">
-                            <img src="Resources/img/angard.png">
+                            <img src="Resources/img/project_imgs/tandem_logo-01.png">
                         </div>
                     </div>
                     <h3 class="plain-h3">Tandem Bicycle</h3>
@@ -213,12 +265,12 @@
 
             <div class="university project" link_address="acasa.html" next_link_address="tetris_app.html" project-type="university">
                 <div class="project-img">
-                    <img src="Resources/css/img/quizzard.png">
+                    <img src="Resources/img/acasa_project-01.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
                         <div class="circle">
-                            <img src="Resources/img/quizzard.png">
+                            <img src="Resources/img/project_imgs/acasa_logo-01.png">
                         </div>
                     </div>
                     <h3 class="plain-h3">Acasa</h3>
@@ -233,13 +285,13 @@
 
             <div class="professional project" link_address="tetris_app.html" next_link_address="angard.html" project-type="professional">
                 <div class="project-img">
-                    <img src="Resources/css/img/shazam-rebrand.png">
+                    <img src="Resources/img/project_imgs/tetris_cover.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
                         <div class="circle">
                             <div class="circle">
-                                <img src="Resources/img/shazam.png">
+                                <img src="Resources/img/project_imgs/tetris_logo.png">
                             </div>
                         </div>
                     </div>
@@ -296,7 +348,7 @@
 
             <div class="university project" link_address="acasa.html"  project-type="university">
                 <div class="project-img">
-                    <img src="Resources/css/img/shazam-rebrand.png">
+                    <img src="Resources/img/project_imgs/shazam_cover.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
@@ -318,7 +370,7 @@
 
             <div class="university project" link_address="acasa.html"  project-type="">
                 <div class="project-img">
-                    <img src="Resources/img/grad-pic.jpg">
+                    <img src="Resources/img/project_imgs/first_port_cover.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
@@ -340,7 +392,7 @@
 
             <div class="personal project" link_address="acasa.html"  project-type="personal">
                 <div class="project-img">
-                    <img src="Resources/img/grad-pic.jpg">
+                    <img src="Resources/img/project_imgs/grocity_cover.png">
                 </div>
                 <div class="project-description">
                     <div class="circle-wrapper">
@@ -527,46 +579,221 @@
                 <h2 class="slide-up-heading">Some of my experience</h2>
             </div>
         </div>
-        <div class="carousel">
-            <div class="carousel-container">
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Math Undergrad Teaching Assistant</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
+        <div class="carousel owl-carousel owl-theme">
+            <div id="imperial-job" class="work-exp">
+                <img class="work-logo" src="Resources/img/imperial_work.png">
+                <div class="work-heading-holder">
+                    <h3 class="plain-h3">Imperial College London</h3>
+                    <p class="project-date">1 yr 9 mos</p>
                 </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Private Tutor</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
-                </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Math and Computing Student Shaper</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
-                </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Technology Internship</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
-
-                </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Nacho </h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
-
-                </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">Nokia</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
-                </div>
-                <div class="work-exp hover">
-                    <h3 class="plain-h3">IBM Design Studio</h3>
-                    <p class="tag blue">Primary</p>
-                    <p class="tag gray">Spanish</p>
+                <div class="row">
+                    <div class="col span-1-of-3 experience-list">
+                        <div name="comp-UTA" work-exp="imperial-job"class="experience-list-item active">
+                            <h4>
+                                Computing Teaching Assistant
+                            </h4>
+                            <p class="smaller-text">
+                                May 2021 - Present • 2 mos
+                            </p>
+                        </div>
+                        <div name="second-rep" work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Second Year Academic Rep
+                            </h4>
+                            <p class="smaller-text">
+                                Oct 2020 - Present • 9 mos
+                            </p>
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Maths Teaching Assistant
+                            </h4>
+                            <p class="smaller-text">
+                                Oct 2020 - Apr 2020 • 6 mos
+                            </p>
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                DesEng Summer Student Shaper
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Aug 2020 • 1 mos
+                            </p>
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                First Year Academic Rep
+                            </h4>
+                            <p class="smaller-text">
+                                Ocy 2019 - Jul 2020 • 10 mos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col span-2-of-3 experience-content">
+                        <!-- COMP-UTA -->
+                        <div id="comp-UTA" class="experience-content-item active">
+                            <div class="content-heading-holder">
+                                <h4>
+                                    Computing Teaching Assistant
+                                </h4>
+                                <p class="smaller-text">
+                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
+                                </p>
+                            </div>
+                            <div class="content-info-holder">
+                                <div class="row">
+                                    <div class="col span-1-of-2 work-ach ach">
+                                        <h4>
+                                            My achievements
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col span-1-of-2 work-ach dev">
+                                        <h4>
+                                            My Development
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SECOND-REP -->
+                        <div id="second-rep" class="experience-content-item">
+                            <div class="content-heading-holder">
+                                <h4>
+                                    Second Year Academic Rep
+                                </h4>
+                                <p class="smaller-text">
+                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
+                                </p>
+                            </div>
+                            <div class="content-info-holder">
+                                <div class="row">
+                                    <div class="col span-1-of-2 work-ach ach">
+                                        <h4>
+                                            My achievements
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col span-1-of-2 work-ach dev">
+                                        <h4>
+                                            My Development
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
+            </div>
+
+            <!-- --------- -->
+            <!-- TUTORING -->
+            <!-- --------- -->
+
+            <div id="tutor-job" class="work-exp hover">
+                <img class="work-logo" src="Resources/img/web-icon_tutoring.svg">
+                <div class="work-heading-holder">
+                    <h3 class="plain-h3">Private Tutor</h3>
+                    <p class="project-date">3 yrs 7 mos</p>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3 experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item active">
+                            <h4>
+                                Freelance private tutoring for IB
+                            </h4>
+                            <p class="smaller-text">
+                                Dec 2017 - Present • 3 yrs 7 mos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col span-2-of-3 experience-content">
+
+                        <!-- PRIV-TUTOR -->
+
+                        <div id="priv-tutor" class="experience-content-item active">
+                            <div class="content-heading-holder">
+                                <h4>
+                                    Freelance Private Tutoring for IB
+                                </h4>
+                                <p class="smaller-text">
+                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
+                                </p>
+                            </div>
+                            <div class="content-info-holder">
+                                <div class="row">
+                                    <div class="col span-1-of-2 work-ach ach">
+                                        <h4>
+                                            My achievements
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col span-1-of-2 work-ach dev">
+                                        <h4>
+                                            My Development
+                                        </h4>
+                                        <ul>
+                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
+                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
+                                            <li><span>To make the hand more stable</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-exp hover">
+                <h3 class="plain-h3">Math and Computing Student Shaper</h3>
+                <p class="tag blue">Primary</p>
+                <p class="tag gray">Spanish</p>
+            </div>
+            <div class="work-exp hover">
+                <h3 class="plain-h3">Technology Internship</h3>
+                <p class="tag blue">Primary</p>
+                <p class="tag gray">Spanish</p>
+
+            </div>
+            <div class="work-exp hover">
+                <h3 class="plain-h3">Nacho </h3>
+                <p class="tag blue">Primary</p>
+                <p class="tag gray">Spanish</p>
+
+            </div>
+            <div class="work-exp hover">
+                <h3 class="plain-h3">Nokia</h3>
+                <p class="tag blue">Primary</p>
+                <p class="tag gray">Spanish</p>
+            </div>
+            <div class="work-exp hover">
+                <h3 class="plain-h3">IBM Design Studio</h3>
+                <p class="tag blue">Primary</p>
+                <p class="tag gray">Spanish</p>
             </div>
         </div>
        
@@ -583,139 +810,52 @@
         </div>
         <div class="row">
             <h3>2D/3D modelling</h3>
+            <ul>
+                <li><span>Solidworks</span></li>
+                <li><span>Fusion 360</span></li>
+                <li><span>Sketching by hand</span></li>
+            </ul>
+
         </div>
         <div class="row">
             <h3>Prototyping and component selection</h3>
+            <ul>
+                <li><span>Mixed, medium, and rapid prototyping</span></li>
+                <li><span>Functional Modelling</span></li>
+            </ul>
         </div>
         <div class="row">
             <h3>Rendering and graphic design</h3>
+            <ul>
+                <li><span>Solidworks Visualize</span></li>
+                <li><span>Blender</span></li>
+                <li><span>Keyshot</span></li>
+                <li><span>Dimensions</span></li>
+                <li><span>InDesign, Illustrator, Photoshot</span></li>
+            </ul>
         </div>
         <div class="row">
             <h3>Video Production and animation</h3>
+            <ul>
+                <li><span>Blender</span></li>
+                <li><span>Keyshot</span></li>
+                <li><span>Premiere Pro</span></li>
+                <li><span>After Effects</span></li>
+            </ul>
         </div>
         <div class="row">
             <h3>Coding and Simulation</h3>
+            <ul>
+                <li><span>Python</span></li>
+                <li><span>MatLab</span></li>
+                <li><span>Solidworks Simulation</span></li>
+                <li><span>Arduino</span></li>
+                <li><span>Java</span></li>
+                <li><span>Javascript</span></li>
+                
+            </ul>
         </div>
-
-        <!---->
-
         <div class="row">
-            <h3>2D/3D Modelling</h3>
-            <div id="modelling" class="owl-three-items owl-carousel owl-theme">
-                <div class="item">
-                    <span class="chart" data-percent="55">
-                        <img class="skill-icon" src="Resources/img/solidworks.png">
-                        <canvas style="height: 50px; width: 50px;"></canvas>
-                    </span>
-                    <h4>Solidworks</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="30">
-                        <img class="skill-icon" src="Resources/img/fusion360.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Fusion 360</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="60">
-                        <img class="skill-icon" src="Resources/img/sketching.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Sketching</h4>
-
-                </div>
-            </div>
-            <h4> Featured Projects </h4>
-            <p>First portfolio, Angard</p>
-            <h3>User Experience & Graphic Design</h3>
-            <div id="design" class="owl-four-items owl-carousel owl-theme">
-                <div class="item">
-                    <span class="chart" data-percent="80">
-                        <img class="skill-icon" src="Resources/img/illustrator.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Adobe Illustrator</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="75">
-                        <img class="skill-icon" src="Resources/img/indesign.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Adobe InDesign</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="50">
-                        <img class="skill-icon" src="Resources/img/photoshop.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Adobe Photoshop</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="70">
-                        <img class="skill-icon" src="Resources/img/sketch.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Sketch</h4>
-                </div> 
-            </div>
-            <h4> Featured Projects </h4>
-            <p>First portfolio, Angard, Grocity, Shazam Rebrand</p>   
-            <h3>Coding and Simulation</h3>
-            <div id = "coding" class="owl-four-items owl-carousel owl-theme">
-                <div class="item">
-                    <span class="chart" data-percent="60">
-                        <img class="skill-icon" src="Resources/img/python.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Python</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="60">
-                        <img class="skill-icon" src="Resources/img/javascript.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="60">
-                        <img class="skill-icon" src="Resources/img/matlab.png">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>MatLab</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="60">
-                        <img class="skill-icon" src="Resources/img/java.webp">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Java</h4>
-                </div>
-                    
-            </div>
-            <h4>Featured Projects </h4>
-            <p>Quizzard, Tetris</p>
-            <h3>Prototyping & Component Selection</h3>
-            <div id ="proto" class="owl-three-items owl-carousel owl-theme">
-                <div class="item">
-                    <span class="chart" data-percent="35">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Foam Prototyping</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="25">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>3D Printing</h4>
-                </div>
-                <div class="item">
-                    <span class="chart" data-percent="55">
-                        <canvas style="height: 120px; width: 120px;"></canvas>
-                    </span>
-                    <h4>Electronic Prototyping</h4>
-                </div>
-            </div>
-            <br>
             <h3>Languages</h3>
                 <div class="shadow-holder">
                     <h4>Spanish</h4>
@@ -802,9 +942,6 @@
     </section>
 
 
-
-
-
     <div class="menu">
         <span></span>
         <span></span>
@@ -833,12 +970,18 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 
+    <!-- PAROLLER PARALAX -->
+
+    <script src="Resources/js/jquery.paroller.min.js"></script>
+
     <!-- ISOTOPE -->
     <script type="text/javascript" src="Resources/js/isotope.pkgd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- SWIPED-EVENTS -->
     <script type="text/javascript" src="Resources/js/swiped-events.js"></script>
+
+    <script type="text/javascript" src="Resources/js/typed.min.js"></script>
 
 
 </body>

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
     toggleActions: "restart pause resume pause"
-  });
+});
 
 let tl = gsap.timeline({
     scrollTrigger: {

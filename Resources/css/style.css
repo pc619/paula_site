@@ -433,6 +433,9 @@ body {
     background: var(--black-text-color);
     border-radius: 50%;
     transition: .5s;
+    z-index: 4;
+    opacity: 0;
+    display: block;
 }
 
 .menu span {
@@ -558,6 +561,90 @@ section.de-active {
 }
 
 /*-------------------------------------------*/
+/* HEADER SECTION */
+/*-------------------------------------------*/
+
+.header{
+    padding-top: 300px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.header-square {
+    background-color: var(--dark-blue-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5% 2%;
+
+}
+
+.header-square {
+    background-color: var(--dark-blue-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5% 2%;
+
+}
+.header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 550%;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.header .plain-h3 {
+    width: 30%;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 30%;
+}
+
+.blue-enhance {
+    color: var(--dark-blue-color);
+    opacity: 0.6;
+    font-weight: 700;
+}
+#hi {
+    -webkit-text-stroke: 1.5px var(--black-text-color); /* width and color */
+    color: rgba(255, 255, 255, 0);
+}
+
+#who-am-I {
+    margin-bottom: 50px;
+    animation-delay: 7s;
+    
+}
+
+@keyframes colorchange {
+    0%{
+        color: var(--black-text-color);
+    }
+    100% {
+        color: var(--dark-blue-color);
+    }
+}
+
+.scrolling-word {
+    position: absolute;
+    bottom: -100px;
+    color: var(--dark-blue-color);
+    opacity: 0.2;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+
+
+
+
+/*-------------------------------------------*/
 /* ABOUT ME SECTION */
 /*-------------------------------------------*/
 
@@ -643,10 +730,11 @@ section.de-active {
 /* ----- LANGUAGES ----- */
 
 .smaller-width {
-    width: 90%;
+    width: 50%;
     margin-bottom: 20px;
     font-weight: 300;
 }
+
 
 .shadow-holder {
     height: 160px;
@@ -685,6 +773,10 @@ section.de-active {
 .education {
     background-color: var(--gray-color);
     height: auto;
+}
+
+.work-exp .project-date {
+    display: inline-block;
 }
 
 .tag {
@@ -936,28 +1028,53 @@ section.de-active {
     transform: translate(-50%, -50%);
 
 }
+
+.skills h3 {
+    margin-bottom: 30px;
+}
 /*-------------------------------------------*/
 /* EXPERIENCE */
 /*-------------------------------------------*/
 
 .carousel {
     width: 100%;
-    overflow-x: hidden;
+    display: block;
     position: relative;
+    height: auto;
+    
 }
 
 .carousel-container {
-    width: 5000vw;
+    padding: 4vw 0;
+    display: block;
     height: auto;  
+    width: 1000000vw;
+}
+
+.owl-stage {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.owl-item{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto !important;
 }
 
 .work-exp {
     padding: 30px 40px;
     display: block;
+    width: 100%;
     float: left;
-    width: 50vw;
-    height: 400px;
-    margin: 4vw;
+    height: auto;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     background-color: var(--white-text-color);
     border-radius: 10px;
     box-shadow: 0px 0px 50px rgba(94, 94, 94, 0.25);
@@ -966,13 +1083,138 @@ section.de-active {
 
 .work-exp.hover:hover {
     transform: translateX(-10px);
-    box-shadow: 0px 0px 50px rgba(94, 94, 94, 0.445);
-
 }
 
-.work-exp:first-of-type {
-    margin-left: 25vw;
+.work-logo {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
+
+.work-heading-holder {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+}
+
+.work-heading-holder h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.work-heading-holder .project-date{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.experience-content {
+    position: relative;
+    z-index: 4;
+    background-color: var(--dark-gray-color);
+    /* border: solid 1px var(--dark-gray-color); */
+    border-radius: 5px;
+}
+
+.experience-content-item.active {
+    display:block;
+}
+
+.experience-content-item {
+    display:none;
+}
+
+
+
+.content-heading-holder {
+    padding: 25px;
+    /* border-bottom: solid 1px var(--dark-gray-color);
+    background-color: var(--gray-color); */
+}
+
+.content-info-holder {
+    padding: 25px;
+    height: auto;
+    
+}
+
+.experience-list {
+    margin-top: 25px;
+    padding-left: 22px;
+}
+
+.experience-list-item {
+    border-left: solid 1.5px var(--gray-color);
+    padding: 0 0 30px 30px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.experience-list-item:hover {
+    color: var(--dark-blue-color);
+}
+
+.experience-list-item:before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+   
+    background-color: var(--gray-color);
+    border: 5px solid white;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 1px);
+}
+
+.experience-list-item.active:after {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    /* border: solid 1px var(--dark-gray-color); */
+    background-color: var(--dark-gray-color);
+    top: 0;
+    right: 0;
+    transform: translateX(130%) rotate(45deg);
+}
+
+.experience-list-item.active {
+    color: var(--dark-blue-color);
+}
+
+.experience-list-item:last-of-type {
+    border-left: none;
+}
+
+.experience-list-item h4 {
+    margin-bottom: 5px;
+    font-size: 65%;
+    font-weight: 400;
+}
+
+.experience-list-item .smaller-text {
+    color: #5f5f5f;
+}
+
+.work-ach:first-of-type {
+    border-right: solid 1px var(--dark-gray-color);
+    padding-right: 25px;
+}
+
+.work-ach h4, .work-ach ul{
+    font-size: 65%;
+}
+
+.work-ach ul{
+    margin-bottom: 0;
+}
+
+
 
 
 
@@ -1399,6 +1641,20 @@ textarea {
     
 }
 
+.project-nav-txt {
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: block;
+    color: white;
+    font-size: 55%;
+    line-height: 1.2;
+    width: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.2;
+}
+
 .project-nav-button {
     display: block;
     position: fixed;
@@ -1687,6 +1943,13 @@ textarea {
 
 .project-header.fourse{
     background-image: url("img/video.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-header.tandem{
+    background-image: url("img/tandem_bike.JPG");
     background-size: cover;
     background-position: center;
 

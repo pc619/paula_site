@@ -13,6 +13,7 @@ let maxExp = expArray.length - 1;
 $(document).ready(function () {
     currExp = 0;
     initFunct();
+    scrollMenuAppear();
 
     $("#projects-grid").isotope({
         filter: "*",
@@ -24,8 +25,10 @@ $(document).ready(function () {
     });
 });
 
+
 $(window).resize(function () {
-    vw = $("body").innerWidth();
+    // setTimeout returns the numeric ID which is used by
+    // clearTimeOut to reset the timer
     // currExp = 0;
     // $(".carousel").stop().animate({
     //     scrollLeft: $(".carousel").scrollLeft() - $(".carousel").scrollLeft()
@@ -42,8 +45,76 @@ $(window).resize(function () {
     // }
 });
 
+const scrollMenuAppear = function () {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".header",
+            pin: false,   // pin the trigger element while active
+            start: "bottom 10%", // when the top of the trigger hits the top of the viewport
+            end: "bottom 5%",
+            scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scroll
+            snap: 1
+        },
+        onComplete: function () {
+    }});
+    
+    tl.to(".menu", {
+        opacity: 1,
+        display: "block"
+    });
+
+    let tl1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".header",
+            pin: false,   // pin the trigger element while active
+            start: "bottom 70%", // when the top of the trigger hits the top of the viewport
+            end: "bottom top",
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scroll
+            snap: 1
+        },
+        onComplete: function () {
+    }});
+
+    tl1.to(".header", {
+       backgroundColor: "#ececec"
+    });
+
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".header",
+            pin: false,   // pin the trigger element while active
+            start: "bottom 80%", // when the top of the trigger hits the top of the viewport
+            end: "bottom 50%",
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scroll
+            snap: 1
+        },
+        onComplete: function () {
+    }});
+    tl2.to(".header h1", {
+        opacity:0
+     });
+};
+
 
 const initFunct = function () {
+    $("[data-paroller-factor]").paroller();
+
+    let typed = new Typed("#who-am-I", {
+        strings: ["","an engineer.","a designer.","a coder.","Paula."],
+        typeSpeed: 70,
+        loop: false,
+        startDelay: 1000,
+        showCursor: false
+    });
+
+    // let typedDes = new Typed("#my-description", {
+    //     stringsElement: "#my-description-text",
+    //     typeSpeed: 30,
+    //     loop: false,
+    //     startDelay: 8000,
+    //     showCursor: false
+    // });
+
 
     // Checking if there is text in the contact section
 
@@ -86,7 +157,8 @@ const initFunct = function () {
     });
 
     $(".nav-btn").click(function () {
-        const id = "#" + $(this).attr("id").toString().substring(2);
+        const id = "#" + $(this).attr("to").toString().substring(2);
+        console.log(id);
         $(".menu").toggleClass("active");
         $(".menu-bar").toggleClass("active");
         if ($("section").hasClass("active")) {
@@ -124,38 +196,6 @@ const initFunct = function () {
         }, 500);
     });
 
-    $(".carousel").on('swiped-left', function() {
-        if ((currExp + 1)<=maxExp) {
-            console.log(currExp);
-            $(".work-exp").each(function() {
-                $(this).addClass("hover");
-            });
-            const id = expArray[currExp + 1];
-            console.log(id);
-            currExp += 1;
-
-            $(id).removeClass("hover");
-            $(".carousel").animate({
-                scrollLeft: $(id).offset().left + $(".carousel").scrollLeft() - (((vw - $(id).innerWidth())/(2*vw))*vw)
-            }, 500);
-        }
-
-    });
-
-    $(".carousel").on('swiped-right', function() {
-        console.log(currExp);
-        if ((currExp - 1)>=0){
-            $(".work-exp").each(function() {
-                $(this).addClass("hover");
-            });
-            const id = expArray[currExp - 1];
-            currExp -= 1;
-            $(id).removeClass("hover");
-            $(".carousel").animate({
-                scrollLeft: $(id).offset().left + $(".carousel").scrollLeft() - (((vw - $(id).innerWidth())/(2*vw))*vw)
-            }, 500);
-        }
-    });
 
     // Contact labels
 
@@ -169,7 +209,39 @@ const initFunct = function () {
         }
     });
 
+    let owl = $(".carousel");
     // Owl carousels for skills
+    owl.owlCarousel({
+        margin: 80,
+        loop: false,
+        items: 1,
+        center: true,
+        stagePadding: 300,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                margin: 10,
+                stagePadding: 35
+            },
+            600:{
+                margin: 15,
+                stagePadding: 90
+            },
+            1000:{
+                margin: 80,
+                stagePadding: 300
+            }
+        }
+    });
+
+     // Custom Navigation Events
+     $(document).on("click", ".owl-item", function(){
+        n = $(this).index();
+        console.log($(this).find(".work-exp"));
+        $(".work-exp").addClass("hover");
+        $(this).find(".work-exp").removeClass("hover");
+        owl.trigger("to.owl.carousel", [n, 500]);
+    });
 
     $(".owl-three-items").owlCarousel({
         loop:true,
@@ -272,6 +344,18 @@ const initFunct = function () {
         //         }
         //     })
         // }
+    });
+
+    // Clicking on projects 
+
+    $(".experience-list-item").click(function(){
+        const name = "#" + $(this).attr("name");
+        const currWorkExp = "#" + $(this).attr("work-exp");
+        console.log($(currWorkExp + ".experience-content-item"));
+        $(currWorkExp + " .experience-list-item").removeClass("active");
+        $(this).addClass("active");
+        $(currWorkExp + " .experience-content-item").removeClass("active");
+        $(name).addClass("active");
     });
 
 };

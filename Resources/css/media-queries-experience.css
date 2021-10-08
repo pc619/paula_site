@@ -8,10 +8,35 @@
 @media all and (max-width: 700px) {
 
     .work-exp {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 40px;
+        padding: 30px;
     }
 
+    .work-exp .plain-h3 {
+        font-size: 83%;
+    }
+
+    .work-exp.hover:hover {
+        transform: translateX(0px);
+    }
+
+    .see-more-inside .see-more-info {
+        width: 100%;
+    
+    }
+
+    .experience-list {
+        padding-left: 5px;
+    }
+
+    .experience-list .row-flex img {
+        width: 60px;
+    }
+
+    /* .experience-list .row-flex {
+        flex-direction: column;
+    } */
 
 }
     

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-eduaction.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-experience.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-skills.css">
     
     <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
       
@@ -34,30 +35,52 @@
             
     </div>
     <section id="header" class="header">
-
-        <div class="header-square">
-            <ul class="main-nav">
-                <li><a href="#" to="2idabout-id" class="nav-btn">About Me</a></li>
-                <li><a href="#" to="2idprojects-id" class="nav-btn">My projects</a></li>
-                <li><a href="#" to="2ideducation-id" class="nav-btn">My education journey</a></li>
-                <li><a href="#" to="2idwork-id" class="nav-btn">Some of my experience</a></li>
-                <li><a href="#" to="2idskills-id" class="nav-btn">Skills I've developped</a></li>
-                <li><a href="#" to="2idcontact-id" class="nav-btn">Contact me!</a></li>
-            </ul>
-
+        <h1 class="header-animated-word design">design</h1>
+        <h1 class="header-animated-word engineering">engineering</h1> 
+        <h1 class="header-animated-word coding">coding</h1> 
+        <div class="header-flex">
+            <div class="header-photo"></div>
+            <div>
+                <h1 id="hi"></h1>
+                <h1 id="who-am-I"></h1>
+                <p id="description-me"></p>
+                <div class="download-options">
+                    <button  class="btn-style btn-outline">Download CV</button>
+                    <button id="view-portfolio" class="btn-style btn-fill">Download PDF Portfolio</button>
+                </div>
+            </div>
         </div>
 
-        <h1 id="hi" data-paroller-factor="-0.5" 
-        data-paroller-factor-xs="-0.5" data-paroller-type="foreground" 
-        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear">
-            Hi, I am
-        </h1>
+        
+        
+        
 
-        <h1 id="who-am-I" data-paroller-factor="-0.5" 
-        data-paroller-factor-xs="-0.5" data-paroller-type="foreground" 
-        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear">
+        <!-- <h1 id="who-am-I">
             
-        </h1>
+            
+        </h1> -->
+<!-- 
+        <div class="header-proj-images-cont">
+            <div class="header-proj-img up-by-0">
+
+            </div>
+            <div class="header-proj-img down-by-40">
+                
+            </div>
+            <div class="header-proj-img up-by-30">
+                
+            </div>
+            <div class="header-proj-img down-by-10">
+                
+            </div>
+        </div> -->
+
+        <div class="scroll-to-see">
+            <p><ion-icon name="arrow-down-circle-outline"></ion-icon>Scroll to see my online portfolio!</p>
+        </div>
+        
+    
+    </section>
 
         <!-- <div class="scrolling-word" data-paroller-factor="10" 
         data-paroller-factor-xs="10" data-paroller-type="foreground" 
@@ -136,7 +159,6 @@
             adobe
         </div> -->
 
-    </section>
     <!-------------------------------------------->
     <!-----------------ABOUT ME------------------->
     <!-------------------------------------------->
@@ -149,7 +171,7 @@
         </div>
         <div class="row">
             <div class="col span-3-of-5">
-                <p class="smaller-width">Hello! My name is Paula Castillero Garcia, I am a spanish 19 year-old currently studying second year Design Enginneering at Imperial.</p>
+                <p class="smaller-width">Hello! My name is Paula Castillero Garcia, I am a spanish 19 year-old currently studying third year Design Enginneering at Imperial.</p>
                 <p class="smaller-width">
                     In the academic spectrum, I love designing both physical and digital products and using computing and engineering skills to make the designs a reality.
                     But, I also love horse riding, travelling and hiking!
@@ -263,7 +285,7 @@
 
             <!-- ACASA -->
 
-            <div class="university project" link_address="acasa.html" next_link_address="tetris_app.html" project-type="university">
+            <div class="university project" link_address="acasa.html" next_link_address="tetris.html" project-type="university">
                 <div class="project-img">
                     <img src="Resources/img/acasa_project-01.png">
                 </div>
@@ -283,7 +305,7 @@
 
             <!-- TETRIS -->
 
-            <div class="professional project" link_address="tetris_app.html" next_link_address="angard.html" project-type="professional">
+            <div class="professional project" link_address="tetris.html" next_link_address="angard.html" project-type="professional">
                 <div class="project-img">
                     <img src="Resources/img/project_imgs/tetris_cover.png">
                 </div>
@@ -306,7 +328,7 @@
 
             <!-- ANGARD -->
 
-            <div class="university project" link_address="acasa.html"  project-type="university">
+            <div class="university project" link_address="angard.html"  project-type="university">
                 <div class="project-img">
                     <img src="Resources/css/img/angard-project.png">
                 </div>
@@ -346,7 +368,7 @@
 
             <!-- SHAZAM REBRAND -->
 
-            <div class="university project" link_address="acasa.html"  project-type="university">
+            <div class="university project" link_address="shazam_rebrand.html"  project-type="university">
                 <div class="project-img">
                     <img src="Resources/img/project_imgs/shazam_cover.png">
                 </div>
@@ -368,7 +390,7 @@
 
             <!-- FIRST PORTFOLIO -->
 
-            <div class="university project" link_address="acasa.html"  project-type="">
+            <div class="university project" link_address="first_portfolio.html"  project-type="">
                 <div class="project-img">
                     <img src="Resources/img/project_imgs/first_port_cover.png">
                 </div>
@@ -390,7 +412,7 @@
 
             <!-- GROCITY -->
 
-            <div class="personal project" link_address="acasa.html"  project-type="personal">
+            <div class="personal project" link_address="grocity.html"  project-type="personal">
                 <div class="project-img">
                     <img src="Resources/img/project_imgs/grocity_cover.png">
                 </div>
@@ -432,30 +454,67 @@
                   
                         <div class="timeline-content js--fadeInLeft">
                             <div class="timeline-heading-holder clearfix padded">
-                                <div class="col span-1-of-5">
-                                    <img class="school-logo" src="Resources/img/imperial.png">
+                                <div class="row-flex flex-start align-center">
+                                    <img class="school-logo" src="Resources/img/imperial_work.png">
+                                    <div>
+                                        <h3 class="plain-h3">Imperial College London</h3>
+                                        <p class="tag blue">Undergrad</p>
+                                        <p class="tag gray">MEng</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col span-1-of-5">
+                                    
                                 </div>
                                 <div class="col span-4-of-5">
-                                    <h3 class="plain-h3">Imperial College London</h3>
-                                    <p class="tag blue">Undergrad</p>
-                                    <p class="tag gray">MEng</p>
-                                </div> 
+                                    
+                                </div>  -->
                             </div>
                             <div opens="imperial-academics" class="padded more-info">
                                 <h4>Academics</h4>
                                 <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="imperial-academics" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Year 1 - 74% (First Class)
+                                        <p> Engineering Maths | Production & Materials | Computing 1 | Computing 2 | 
+                                            Human Centered Design Engineering | Solid Mechanics 1 | Electronics 1</p>
+                                    </li>
+                                    <li>
+                                        Year 2 - 72% (First Class)
+                                        <p>
+                                            Data Science | Solid Mechanics 2 | Thermofluids | Sustainable Design Engineering |
+                                            Industrial Design Engineering | Electronics 2 | Gizmo | Finite Element Analysis | Working in Organization 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Year 3 - In the process
+                                        <p>
+                                            Optimization | Robotics 1 | Robotics 2 | Design Engineering Futures | Innovation & Entrepeneurship | 
+                                            Machine Learning | iExplore (The Science of Learning) | Industrial Placement
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                             <div opens="imperial-highlights" class="padded more-info">
                                 <h4>Highlights</h4>
                                 <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="imperial-highlights" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Academic Representative in 2019-20 and 2020-21
+                                    </li>
+                                    <li>
+                                        Old Centralians' Trust Student Activity Award in 2020-21
+                                    </li>
+                                    <li>
+                                        Undergraduate teaching assistant for two modules
+                                    </li>
+                                    <li>
+                                        Module reshaping UROP in summer of 2020
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div> 
@@ -467,13 +526,14 @@
                   
                         <div class="timeline-content js--fadeInLeft">
                             <div class="timeline-heading-holder clearfix padded">
-                                <div class="col span-1-of-5">
+                                <div class="row-flex flex-start align-center">
                                     <img class="school-logo" src="Resources/img/dia.png">
-                                </div>
-                                <div class="col span-4-of-5">
-                                    <h3 class="plain-h3">Dubai International Academy</h3>
-                                    <p class="tag blue">Secondary</p>
-                                    <p class="tag gray">IB</p>
+                                    <div>
+                                        <h3 class="plain-h3">Dubai International Academy</h3>
+                                        <p class="tag blue">Secondary</p>
+                                        <p class="tag gray">IB</p>  
+                                    </div>
+
                                 </div> 
                             </div>
                             <div opens="dia-academics" class="padded more-info">
@@ -481,16 +541,43 @@
                                 <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="dia-academics" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Diploma Program - 39/45
+                                        <p> Mathematics HL | Physics HL | French HL | Computer Science SL | 
+                                            English LangLit SL | Economics SL</p>
+                                    </li>
+                                    <li>
+                                        Middle Years Program - 52/56
+                                        <p>
+                                            Mathematics | Physics | Chemistry | Digital Design |
+                                            English | Economics | French 
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                             <div opens="dia-highlights" class="padded more-info">
                                 <h4>Highlights</h4>
                                 <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="dia-highlights" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Winner of National Mobile app design and creation in 2018 
+                                    </li>
+                                    <li>
+                                        Participant of coding competition
+                                    </li>
+                                    <li>
+                                        Participant of Model United Nations (MUN)
+                                    </li>
+                                    <li>
+                                        Part of swim team for five last years
+                                    </li>
+                                    <li>
+                                        20+ Academic Achievement/Most Improved Awards
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div> 
@@ -503,31 +590,34 @@
                         <div class="timeline-content js--fadeInLeft">
                             
                             <div class="timeline-heading-holder clearfix padded">
-                                <div class="col span-1-of-5">
+                                <div class="row-flex flex-start align-center">
                                     <img class="school-logo" src="Resources/img/ris.png">
+                                    <div>
+                                        <h3 class="plain-h3">Regent International School</h3>
+                                        <p class="tag blue">Primary</p>
+                                        <p class="tag gray">British</p>
+                                    </div>
                                 </div>
-                                <div class="col span-4-of-5">
-                                    <h3 class="plain-h3">Regent International School</h3>
-                                    <p class="tag blue">Primary</p>
-                                    <p class="tag gray">British</p>
-                                </div> 
                             </div>
                             <div opens="ris-academics" class="padded more-info">
                                 <h4>Academics</h4>
                                 <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="ris-academics" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Year 6 & 7 - British Curriculum
+                                    </li>
+                                </ul>
                             </div>
-                            <div opens="ris-highlights" class="padded more-info">
+                            <!-- <div opens="ris-highlights" class="padded more-info">
                                 <h4>Highlights</h4>
                                 <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="ris-highlights" class="padded extra-info invisible">
                                 <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
                                     In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div> 
 
@@ -538,14 +628,15 @@
                         <div class="timeline-content js--fadeInLeft">
                             
                             <div class="timeline-heading-holder clearfix padded">
-                                <div class="col span-1-of-5">
+
+                                <div class="row-flex flex-start align-center">
                                     <img class="school-logo" src="Resources/img/valdefuentes.png">
+                                    <div>
+                                        <h3 class="plain-h3">Valdefuentes</h3>
+                                        <p class="tag blue">Primary</p>
+                                        <p class="tag gray">Spanish</p>
+                                    </div>
                                 </div>
-                                <div class="col span-4-of-5">
-                                    <h3 class="plain-h3">Valdefuentes</h3>
-                                    <p class="tag blue">Primary</p>
-                                    <p class="tag gray">Spanish</p>
-                                </div> 
                             </div>
                             
                             <div opens="valde-academics" class="padded more-info">
@@ -553,17 +644,20 @@
                                 <div class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="valde-academics" class="padded extra-info invisible">
-                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
-                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                                <ul>
+                                    <li>
+                                        Year 1 to Year 5 - Spanish Curriculum
+                                    </li>
+                                </ul>
                             </div>
-                            <div  opens="valde-highlights" class="padded more-info">
+                            <!-- <div  opens="valde-highlights" class="padded more-info">
                                 <h4>Highlights</h4>
                                 <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
                             </div>
                             <div id="valde-highlights" class="padded extra-info invisible">
                                 <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
                                     In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>     
             </div>
@@ -581,28 +675,52 @@
         </div>
         <div class="carousel owl-carousel owl-theme">
             <div id="imperial-job" class="work-exp">
-                <img class="work-logo" src="Resources/img/imperial_work.png">
-                <div class="work-heading-holder">
-                    <h3 class="plain-h3">Imperial College London</h3>
-                    <p class="project-date">1 yr 9 mos</p>
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/imperial_work.png">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Imperial College London</h3>
+                        <p class="project-date">1 yr 9 mos</p>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3 experience-list">
-                        <div name="comp-UTA" work-exp="imperial-job"class="experience-list-item active">
+                
+                <div>
+                    <div class="experience-list">
+                        <div name="comp-UTA" work-exp="imperial-job" class="experience-list-item">
                             <h4>
                                 Computing Teaching Assistant
                             </h4>
                             <p class="smaller-text">
                                 May 2021 - Present • 2 mos
                             </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role was to bi weekly tutor a group of 10 freshers in the Computing 2 module.
+                                            I had to help with weekly tutorial activities and their end of module project.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>       
                         </div>
+                        
                         <div name="second-rep" work-exp="imperial-job" class="experience-list-item">
                             <h4>
-                                Second Year Academic Rep
+                                Second Year Academic Representative
                             </h4>
                             <p class="smaller-text">
-                                Oct 2020 - Present • 9 mos
+                                Oct 2020 - Jul 2021 • 10 mos
                             </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This volunteering role required me to regularly check on my cohort and raise any problems to module leaders.
+                                            I worked alongside the wellbeing rep to ensure a good uni and academic experience for our peers.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                         <div work-exp="imperial-job" class="experience-list-item">
                             <h4>
@@ -611,94 +729,52 @@
                             <p class="smaller-text">
                                 Oct 2020 - Apr 2020 • 6 mos
                             </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role was to  weekly tutor a group of 10 freshers in the Mathematics for engineers module.
+                                            I had to help with weekly tutorial activities and to understand the concepts.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                         <div work-exp="imperial-job" class="experience-list-item">
                             <h4>
-                                DesEng Summer Student Shaper
+                                Design Engineering Summer Student Shaper
                             </h4>
                             <p class="smaller-text">
                                 Jul 2020 - Aug 2020 • 1 mos
                             </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I worked alongise other students and module leaders to reshape two modules (Maths and Computing 1) in a five-week period.
+                                            We used our experience as students to redesign activities, projects and create sample projects.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                         <div work-exp="imperial-job" class="experience-list-item">
                             <h4>
-                                First Year Academic Rep
+                                First Year Academic Representative
                             </h4>
                             <p class="smaller-text">
-                                Ocy 2019 - Jul 2020 • 10 mos
+                                Oct 2019 - Jul 2020 • 10 mos
                             </p>
-                        </div>
-                    </div>
-                    <div class="col span-2-of-3 experience-content">
-                        <!-- COMP-UTA -->
-                        <div id="comp-UTA" class="experience-content-item active">
-                            <div class="content-heading-holder">
-                                <h4>
-                                    Computing Teaching Assistant
-                                </h4>
-                                <p class="smaller-text">
-                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
-                                </p>
-                            </div>
-                            <div class="content-info-holder">
-                                <div class="row">
-                                    <div class="col span-1-of-2 work-ach ach">
-                                        <h4>
-                                            My achievements
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col span-1-of-2 work-ach dev">
-                                        <h4>
-                                            My Development
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This volunteering role required me to regularly check on my cohort and raise any problems to module leaders.
+                                            I worked alongside the wellbeing rep to ensure a good uni and academic experience for our peers.
+                                        </p> 
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- SECOND-REP -->
-                        <div id="second-rep" class="experience-content-item">
-                            <div class="content-heading-holder">
-                                <h4>
-                                    Second Year Academic Rep
-                                </h4>
-                                <p class="smaller-text">
-                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
-                                </p>
-                            </div>
-                            <div class="content-info-holder">
-                                <div class="row">
-                                    <div class="col span-1-of-2 work-ach ach">
-                                        <h4>
-                                            My achievements
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col span-1-of-2 work-ach dev">
-                                        <h4>
-                                            My Development
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -710,90 +786,197 @@
             <!-- --------- -->
 
             <div id="tutor-job" class="work-exp hover">
-                <img class="work-logo" src="Resources/img/web-icon_tutoring.svg">
-                <div class="work-heading-holder">
-                    <h3 class="plain-h3">Private Tutor</h3>
-                    <p class="project-date">3 yrs 7 mos</p>
+
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/web-icon_tutoring.svg">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Freelance Work</h3>
+                        <p class="project-date">3 yrs 7 mos</p>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3 experience-list">
-                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item active">
+                
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
                             <h4>
-                                Freelance private tutoring for IB
+                                Website Designing & Developing
                             </h4>
                             <p class="smaller-text">
-                                Dec 2017 - Present • 3 yrs 7 mos
+                                Sep 2021 - Present • 1 mon
                             </p>
-                        </div>
-                    </div>
-                    <div class="col span-2-of-3 experience-content">
-
-                        <!-- PRIV-TUTOR -->
-
-                        <div id="priv-tutor" class="experience-content-item active">
-                            <div class="content-heading-holder">
-                                <h4>
-                                    Freelance Private Tutoring for IB
-                                </h4>
-                                <p class="smaller-text">
-                                    I was an undergraduate teaching assistant for the cohort below in the computing module, teaching a group of 10 students for two hours a week.
-                                </p>
-                            </div>
-                            <div class="content-info-holder">
-                                <div class="row">
-                                    <div class="col span-1-of-2 work-ach ach">
-                                        <h4>
-                                            My achievements
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col span-1-of-2 work-ach dev">
-                                        <h4>
-                                            My Development
-                                        </h4>
-                                        <ul>
-                                            <li><span>Bought new servos (MG995 model) which can move up to 15kg.</span></li>
-                                            <li><span>Put wooden depressors on the cardboard pieces to reduce the clearance in rotation.</span></li>
-                                            <li><span>To make the hand more stable</span></li>
-                                        </ul>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I have started doing side jobs designing and developing websites to optimize UX for my clients.
+                                        </p> 
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
+
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Private tutoring for IB
+                            </h4>
+                            <p class="smaller-text">
+                                Dec 2017 - Present • 3 yrs 9 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I work as a general private tutor for IB subjects (primarily Computer Science, Maths, and Physics). 
+                                            My role is to help understand the concepts and train students how to answer questions.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
                     </div>
                 </div>
             </div>
 
+            <!------------------->
+            <!---BRIGHT NETWORK-->
+
             <div class="work-exp hover">
-                <h3 class="plain-h3">Math and Computing Student Shaper</h3>
-                <p class="tag blue">Primary</p>
-                <p class="tag gray">Spanish</p>
-            </div>
-            <div class="work-exp hover">
-                <h3 class="plain-h3">Technology Internship</h3>
-                <p class="tag blue">Primary</p>
-                <p class="tag gray">Spanish</p>
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/logo_img/brightnetwork.png">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Bright Network</h3>
+                        <p class="project-date">2 weeks</p>
+                    </div>
+                </div>
+               
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Technology Internship Experience
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Present • 1 week
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This was a work shadowing experience where I got insight into the tech industry. 
+                                            We learnt about networking as well as the latest tech trends. 
+                                            We then completed a project plan on implementing a facial verification service into a bank.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Consultancy Internship Experience
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Present • 1 week
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This was a work shadowing experience where I got insight into the consultancy industry. 
+                                            We learnt about networking as well as the work ethics at top companies. 
+                                            We then completed a proposal on adding a customer loyalty scheme into a chocolate brand of our choice.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div class="work-exp hover">
-                <h3 class="plain-h3">Nacho </h3>
-                <p class="tag blue">Primary</p>
-                <p class="tag gray">Spanish</p>
+                <div class="work-heading-holder">
+                    <h3 class="plain-h3">High School Internships</h3>
+                    <p class="project-date">2 weeks</p>
+                </div>
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center flex-wrap-wrap">
+                                <img src="Resources/img/logo_img/eaton.png">
+                                <div class="flex-item min-width-50pc padding-top-bottom-4pc">
+                                    <h4>
+                                        Eaton
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Jul 2019 • 2 weeks
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role during this internship/work shadowing experience was to understand the operations of the company (from CAD to sales).
+                                            Then I helped translate client presentations from Spanish to English with the industry knowledge I gained.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
 
-            </div>
-            <div class="work-exp hover">
-                <h3 class="plain-h3">Nokia</h3>
-                <p class="tag blue">Primary</p>
-                <p class="tag gray">Spanish</p>
-            </div>
-            <div class="work-exp hover">
-                <h3 class="plain-h3">IBM Design Studio</h3>
-                <p class="tag blue">Primary</p>
-                <p class="tag gray">Spanish</p>
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center">
+                                <img class="ios-strech-fix" src="Resources/img/logo_img/nokia_white_logo.png">
+                                <div>
+                                    <h4>
+                                        Nokia
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Apr 2018 • 1 week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This one week work shadowing experience was an insight into the telecommunications industry.
+                                            I was taken along each section of the company and learned about how their networking process works as well
+                                            as how to lead and manage a project.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center">
+                                <img src="Resources/img/logo_img/ibm.png">
+                                <div>
+                                    <h4>
+                                        IBM Design Studio
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Jun 2018 • 1 week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            During this internship, I was set a task of creating a website that aids in helping students choose their university degree.
+                                            I had to come up with a user persona, user journey etc. to create an optimized design. I then had to present my outcome to the team.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
        
@@ -810,50 +993,350 @@
         </div>
         <div class="row">
             <h3>2D/3D modelling</h3>
-            <ul>
-                <li><span>Solidworks</span></li>
-                <li><span>Fusion 360</span></li>
-                <li><span>Sketching by hand</span></li>
-            </ul>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/solidworks.png">
+                        <p>Solidworks</p>
+                    </div>
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/fusion360.png">
+                        <p>Fusion 360</p>
+                    </div>
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/sketching.png">
+                        <p>Sketching by hand</p>
+                    </div>
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
 
         </div>
         <div class="row">
             <h3>Prototyping and component selection</h3>
-            <ul>
-                <li><span>Mixed, medium, and rapid prototyping</span></li>
-                <li><span>Functional Modelling</span></li>
-            </ul>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/white.png">
+                        <p>Medium/rapid prototyping</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/white.png">
+                        <p>Functional Modelling</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                    </div>
+                </div>
+            </div>
+            
+            
         </div>
         <div class="row">
             <h3>Rendering and graphic design</h3>
-            <ul>
-                <li><span>Solidworks Visualize</span></li>
-                <li><span>Blender</span></li>
-                <li><span>Keyshot</span></li>
-                <li><span>Dimensions</span></li>
-                <li><span>InDesign, Illustrator, Photoshot</span></li>
-            </ul>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/solidworks-visualize.png">
+                        <p>Soliworks Visualize</p>
+                    </div>
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/blender.png">
+                        <p>Blender</p>
+                    </div>
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/keyshot.png">
+                        <p>Keyshot</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/dimensions.png">
+                        <p>Dimensions</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/adobe.png">
+                        <p>Adobe InDesign, Illustrator, Photoshop, XD</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                    </div>
+                </div>
+
+                
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/sketch.png">
+                        <p>Sketch</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            
+            
+            
+            
         </div>
         <div class="row">
             <h3>Video Production and animation</h3>
-            <ul>
-                <li><span>Blender</span></li>
-                <li><span>Keyshot</span></li>
-                <li><span>Premiere Pro</span></li>
-                <li><span>After Effects</span></li>
-            </ul>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/blender.png">
+                        <p>Blender</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/keyshot.png">
+                        <p>Keyshot</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/premiere-pro.png">
+                        <p>Premiere Pro</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/after-effects.png">
+                        <p>After Effects</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
         </div>
         <div class="row">
             <h3>Coding and Simulation</h3>
-            <ul>
-                <li><span>Python</span></li>
-                <li><span>MatLab</span></li>
-                <li><span>Solidworks Simulation</span></li>
-                <li><span>Arduino</span></li>
-                <li><span>Java</span></li>
-                <li><span>Javascript</span></li>
-                
-            </ul>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/python.png">
+                        <p>Python</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/matlab.png">
+                        <p>MatLab</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/solidworks.png">
+                        <p>Soliworks Simulation</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/logo_img/arduino.png">
+                        <p>Arduino</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/java.webp">
+                        <p>Java</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/javascript.png">
+                        <p>Javascript</p>
+                    </div>
+                    
+                    <div class="skill-level">
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="row">
             <h3>Languages</h3>
@@ -907,7 +1390,7 @@
                     <label id="text-label" for="comments" >Your message</label>
                     <textarea  name="message" label="text-label" id="comments" class="feedback-input" placeholder=""></textarea>  
                 </div>
-                <input id="submit" type="submit" value="Send"/>
+                <input class="btn-style btn-fill" id="submit" type="submit" value="Send"/>
             </form>
         </div>
 
@@ -936,7 +1419,7 @@
         </div>
         <div class="row"></div>
             <p>
-                Copyright &copy; 2020 by Paula Castillero. All rights reserved.
+                Copyright &copy; 2020 by Paula Castillero. All rights reserved. This entire website was coded by myself.
             </p>
         </div>
     </section>
@@ -968,7 +1451,7 @@
 
      <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+     
 
     <!-- PAROLLER PARALAX -->
 
@@ -983,5 +1466,7 @@
 
     <script type="text/javascript" src="Resources/js/typed.min.js"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>

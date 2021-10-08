@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/magnific-popup.css">
     <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -81,44 +82,50 @@
             
         </div>
         <div class="project-header tandem">
+        
         </div>
-        <section>
+        <section id="summary-and-overview">
+            <!-- Name & Subheading of project -->
             <div class="project-row" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
                 <div class="project-page-header">
-                    <h2 style="text-align: center;">Tandem Bike</h2> 
-                    <h4 style="text-align: center;">Finite Element Analysis | University Project</h4>    
+                    <h2 style="text-align: center;">Tandem bike</h2> 
+                    <h4 style="text-align: center;">Gizmo - Physical Computing | University Project</h4>    
                 </div>
             </div>
+            <!-- Summary & Overview of project -->
             <div class="project-row" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-once="true">
+                <!-- Summary -->
                 <div class="col span-1-of-2 project-summary">
                     <h3 class="plain-h3">Summary</h3>
-                    <div class="row row-for-bullets">
+                    <div class="row-for-bullets text-description">
                         <div class="col span-1-of-8 col-for-bullets">
                             <p class="number-bullet"><ion-icon name="document-text-outline"></ion-icon></p>
                             <p class="bullet-subheading">Brief</p>
                         </div>
                         <div class="col span-7-of-8 full-height">
                             <p class="explanation-bullet">
-                                To create a CAD model of lightweight tandem bike CAD model with higher natural frequency than 30Hz and minimum product life of 10 years. Conduct FEA analysis to test.
+                                To create a CAD model of lightweight tandem bike CAD model with higher natural frequency than 30Hz and minimum product life of 10 years. 
+                                Conduct FEA analysis to test. 
                             </p>
                         </div>
                     </div>
                     <p>
                         To achieve the brief above, I first made a solid model of a tandem bike on solidworks. 
-                        Then, I identified the methods for the FEA simulations (i.e., boundary and loading conditions, simulation parameters, etc.).
+                        Then, I identified the methods for the FEA simulations (i.e., boundary and loading conditions, simulation parameters, etc.). 
                         This model was then analysed using two different materials (Aluminum Alloy 7075 – T6, and Titanium Ti-5Al-2.5Sn). 
                         Sanity checks and mesh refinement were also conducted. 
+                        
                     </p>
                     <p>
                         In order to improve the natural frequency of the bike, a new solidworks model was made. 
-                        This revised model was analyzed using the same methods and the results were compared.
+                        This revised model was analyzed using the same methods and the results were compared. 
                     </p>
-                    
                 </div>
+                <!-- Overview -->
                 <div class="col span-1-of-2">
-                    <div class="project-overview">
+                    <div class="project-overview text-description">
                         <h3 class="plain-h3">Overview of project</h3>
-                        <div class="row row-for-bullets">
+                        <div class="row-for-bullets">
                             <div class="col span-1-of-7 col-for-bullets">
                                 <p class="number-bullet">01</p>
                                 <p class="bullet-subheading">Date</p>
@@ -127,7 +134,7 @@
                                 <p class="explanation-bullet one-line">Mar 2021 - Apr 2021</p>
                             </div>
                         </div>
-                        <div class="row row-for-bullets">
+                        <div class="row-for-bullets">
                             <div class="col span-1-of-7 col-for-bullets">
                                 <p class="number-bullet">02</p>
                                 <p class="bullet-subheading">Skills</p>
@@ -136,7 +143,7 @@
                                 <p class="explanation-bullet one-line"> Finite Element Analysis, Solidworks</p>
                             </div>
                         </div>
-                        <div class="row row-for-bullets">
+                        <div class="row-for-bullets">
                             <div class="col span-1-of-7 col-for-bullets">
                                 <p class="number-bullet">03</p>
                                 <p class="bullet-subheading">Software</p>
@@ -145,7 +152,7 @@
                                 <p class="explanation-bullet one-line">Solidworks</p>
                             </div>
                         </div>
-                        <div class="row row-for-bullets">
+                        <div class="row-for-bullets">
                             <div class="col span-1-of-7 col-for-bullets">
                                 <p class="number-bullet">04</p>
                                 <p class="bullet-subheading">Team</p>
@@ -154,19 +161,20 @@
                                 <p class="explanation-bullet one-line">N/A (Individual)</p>
                             </div>
                         </div>
-                        <div class="row row-for-bullets">
+                        <div class="row-for-bullets">
                             <div class="col span-1-of-7 col-for-bullets">
                                 <p class="number-bullet">05</p>
                                 <p class="bullet-subheading">Grade</p>
                             </div>
                             <div class="col span-6-of-7 full-height">
-                                <p class="explanation-bullet one-line">N/A</p>
+                                <p class="explanation-bullet one-line">2:1</p>
                             </div>
                         </div>         
                     </div>
                 </div>
             </div>
         </section>
+        <!-- DETAILS HERE -->
         <div id="project-detail">
             <section class="gray-section">
                 <div class="project-row small">
@@ -185,23 +193,24 @@
                     <p data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true"> 
                         For the purpose of these studies, the following loading conditions were assumed:
                     </p>
-                    <div class="row" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
-                        <div class="col span-1-of-2 col-box">
-                            <img src="Resources/img/tandem_img/Fixed_Geometry.PNG" class="w100percent">
-                            <h4>Fixed Fork Shell</h4>
-                            <p class="last-para">
-                                The fork shell is assumed to be fixed (i.e. no degrees of freedom).
-                            </p>
-                        </div>
-                        <div class="col span-1-of-2 col-box">
-                            <img src="Resources/img/tandem_img/Fixed_Hinge.PNG" class="w100percent">
-                            <h4>Hinged rear wheel bearing</h4> 
-                            <p class="last-para">
-                                The hinged rear wheel bearing are assumed to be hinged 
-                                (i.e. one degree of freedom - moment in the y direaction).
-                            </p>
-                        </div>
+                </div>
+                <div class="project-row small" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="col span-1-of-2 col-box">
+                        <img src="Resources/img/tandem_img/Fixed_Geometry.PNG" class="w100percent">
+                        <h4>Fixed Fork Shell</h4>
+                        <p>
+                            The fork shell is assumed to be fixed (i.e. no degrees of freedom).
+                        </p>
                     </div>
+                    <div class="col span-1-of-2 col-box">
+                        <img src="Resources/img/tandem_img/Fixed_Hinge.PNG" class="w100percent">
+                        <h4>Hinged rear wheel bearing</h4> 
+                        <p class="last-para">
+                            The hinged rear wheel bearing are assumed to be hinged 
+                            (i.e. one degree of freedom - moment in the y direaction).
+                        </p>
+                    </div>
+                </div>
                     
                 </div>
                 <div class="project-row small">
@@ -290,7 +299,7 @@
                         to sustain one million cycles of pedaling with two 150kg rider sitting on top of it, therefore, to
                         conduct this study the following events were used on each bike frame design.
                     </p>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-2-of-7 col-for-bullets">
                             <p class="number-bullet">01</p>
                             <p class="bullet-subheading">Pedal Force 1 Analysis</p>
@@ -302,7 +311,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-2-of-7 col-for-bullets">
                             <p class="number-bullet">02</p>
                             <p class="bullet-subheading">Pedal Force 2 Analysis</p>
@@ -314,7 +323,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-2-of-7 col-for-bullets">
                             <p class="number-bullet">03</p>
                             <p class="bullet-subheading">Rider Mass Analysis</p>
@@ -507,7 +516,7 @@
                         to make it more comfortable for the riders). Natural frequency is the frequency at which the
                         system resonates and there are two factors that contribute to a it:
                     </p>
-                    <div class="row row-for-bullets">
+                    <div class="row-for-bullets">
                         <div class="col span-1-of-8 col-for-bullets">
                             <p class="number-bullet">01</ion-icon></p>
                         </div>
@@ -517,7 +526,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row row-for-bullets">
+                    <div class="row-for-bullets">
                         <div class="col span-1-of-8 col-for-bullets">
                             <p class="number-bullet">02</ion-icon></p>
                         </div>
@@ -678,7 +687,7 @@
                         Despite the clear benefits of FE methods, there are three primary sources of errors that arise
                         when carrying out FEA:
                     </p>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-1-of-6 col-for-bullets">
                             <p class="number-bullet">01</p>
                             <p class="bullet-subheading">Modelling Error</p>
@@ -696,7 +705,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-1-of-6 col-for-bullets">
                             <p class="number-bullet">02</p>
                             <p class="bullet-subheading">Discretization Error</p>
@@ -711,7 +720,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row row-for-bullets" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
+                    <div class="row-for-bullets text-description" data-aos="fade" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-once="true">
                         <div class="col span-1-of-6 col-for-bullets">
                             <p class="number-bullet">03</p>
                             <p class="bullet-subheading">Numerical Error</p>
@@ -753,6 +762,7 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="Resources/js/jquery.magnific-popup.min.js"></script>
 
     
 </body>

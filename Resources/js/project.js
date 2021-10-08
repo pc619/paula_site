@@ -40,6 +40,13 @@ const find_prev_page = function(strCurrentPage, arrProjectArray) {
 };
 
 const initFunct = function () {
+
+        $(".popup-modal").magnificPopup({
+            type: 'iframe'
+
+        });
+
+
     const projectArray = [
         "nintendo_rev.html",
         "gizmo_fourse.html",

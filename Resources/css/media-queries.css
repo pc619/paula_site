@@ -8,10 +8,10 @@
 
     /* Changing the summary + overview so it is in two separate rows. */
 
-    .project-row .span-2-of-2 {
+    #summary-and-overview .project-row .span-2-of-2 {
 		width: 100%; 
 	}
-	.project-row .span-1-of-2 {
+	#summary-and-overview .project-row .span-1-of-2 {
 		width: 100%; 
 	}
 
@@ -40,7 +40,7 @@
 
 /* CHANGING THE PROJECT PAGES YOU CAN'T NAVIGATE BETWEEN THEM ANYMORE :( */
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1300px) {
    
     .project-bg {
         padding-top: 0;
@@ -143,6 +143,13 @@
         margin-left: 0;
     }
 
+    #project-detail .project-row .span-2-of-2 {
+		width: 100%; 
+	}
+	#project-detail .project-row .span-1-of-2 {
+		width: 100%; 
+	}
+
 }
 
 @media all and (max-width: 500px) {
@@ -155,7 +162,7 @@
     }
 
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .smaller-width {
@@ -191,6 +198,8 @@
 
     /* PROJECT-PAGE: CHANGING THE OVERVIEW BULLETS TO ONE LINE */
 
+    
+
     .text-description .span-1-of-8 {
         width: 100%;
     }
@@ -200,7 +209,20 @@
     .text-description .span-1-of-7 {
         width: 100%;
     }
+    .text-description .span-2-of-7 {
+        width: 100%;
+    }
+    .text-description .span-5-of-7 {
+        width: 100%;
+    }
     .text-description .span-6-of-7 {
+        width: 100%;
+    }
+
+    .text-description .span-1-of-6 {
+        width: 100%;
+    }
+    .text-description .span-5-of-6 {
         width: 100%;
     }
 
@@ -234,6 +256,15 @@
 
     /* PROJECT PAGE: CHANGING THE IMAGES AND H4 HEADINGS TO CENTER */
 
+    .project:hover {
+        transform: translateY(0);
+        box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.151);
+    }
+
+    .project:active {
+        box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.6);
+    }
+
     .project-row .col-box img {
         display: block;
         margin: auto;
@@ -264,6 +295,9 @@
 
     .row.projects-container {
         max-width:300px;
+    }
+    .project-img {
+        height: 180px;
     }
 
     .project-description .smaller-text {

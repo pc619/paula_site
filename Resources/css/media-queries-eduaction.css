@@ -53,6 +53,21 @@
 
     .timeline-content .plain-h3 {
         font-size: 70%;
+        margin-bottom: 0px
+    }
+
+    .school-logo {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .timeline-content .h4{
+        font-size: 60%;
+    }
+
+    .timeline-heading-holder {
+        padding: 10px 15px;
     }
 
     .education .row.for-timeline {
@@ -66,5 +81,9 @@
 
     .timeline {
         margin-top: 20px;
+    }
+
+    .tag {
+        display:none;
     }
 }

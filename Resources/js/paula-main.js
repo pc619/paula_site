@@ -13,8 +13,7 @@ let maxExp = expArray.length - 1;
 $(document).ready(function () {
     currExp = 0;
     initFunct();
-    scrollMenuAppear();
-
+    
     $("#projects-grid").isotope({
         filter: "*",
         animationOptions: {
@@ -22,6 +21,35 @@ $(document).ready(function () {
             easing: "linear",
             queue: false
         }
+    });
+
+    let typedOne = new Typed("#hi", {
+        strings: ["","Hey,"],
+        typeSpeed: 50,
+        loop: false,
+        startDelay: 100,
+        showCursor: false
+    });
+
+    let typed = new Typed("#who-am-I", {
+        strings: ["","I'm Paula."],
+        typeSpeed: 50,
+        loop: false,
+        startDelay: 800,
+        showCursor: false
+    });
+
+    let typedTwo = new Typed("#description-me", {
+        strings: ["","I'm a design engineer at Imperial College London!"],
+        typeSpeed: 20,
+        loop: false,
+        startDelay: 2000,
+        showCursor: false
+    });
+
+    $("#view-portfolio").click(function () {
+        console.log("hi");
+        window.location.href = "paula_castillero.html";
     });
 });
 
@@ -45,67 +73,11 @@ $(window).resize(function () {
     // }
 });
 
-const scrollMenuAppear = function () {
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".header",
-            pin: false,   // pin the trigger element while active
-            start: "bottom 10%", // when the top of the trigger hits the top of the viewport
-            end: "bottom 5%",
-            scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scroll
-            snap: 1
-        },
-        onComplete: function () {
-    }});
-    
-    tl.to(".menu", {
-        opacity: 1,
-        display: "block"
-    });
-
-    let tl1 = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".header",
-            pin: false,   // pin the trigger element while active
-            start: "bottom 70%", // when the top of the trigger hits the top of the viewport
-            end: "bottom top",
-            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scroll
-            snap: 1
-        },
-        onComplete: function () {
-    }});
-
-    tl1.to(".header", {
-       backgroundColor: "#ececec"
-    });
-
-    let tl2 = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".header",
-            pin: false,   // pin the trigger element while active
-            start: "bottom 80%", // when the top of the trigger hits the top of the viewport
-            end: "bottom 50%",
-            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scroll
-            snap: 1
-        },
-        onComplete: function () {
-    }});
-    tl2.to(".header h1", {
-        opacity:0
-     });
-};
 
 
 const initFunct = function () {
     $("[data-paroller-factor]").paroller();
 
-    let typed = new Typed("#who-am-I", {
-        strings: ["","an engineer.","a designer.","a coder.","Paula."],
-        typeSpeed: 70,
-        loop: false,
-        startDelay: 1000,
-        showCursor: false
-    });
 
     // let typedDes = new Typed("#my-description", {
     //     stringsElement: "#my-description-text",
@@ -227,9 +199,25 @@ const initFunct = function () {
                 margin: 15,
                 stagePadding: 90
             },
-            1000:{
-                margin: 80,
+            800:{
+                margin: 50,
+                stagePadding: 150
+            },
+            1000: {
+                margin: 90,
+                stagePadding: 250
+            },
+            1200: {
+                margin: 150,
                 stagePadding: 300
+            },
+            1400:{
+                margin: 150,
+                stagePadding: 400
+            },
+            1600: {
+                margin: 150,
+                stagePadding: 500
             }
         }
     });
@@ -348,14 +336,12 @@ const initFunct = function () {
 
     // Clicking on projects 
 
-    $(".experience-list-item").click(function(){
-        const name = "#" + $(this).attr("name");
-        const currWorkExp = "#" + $(this).attr("work-exp");
-        console.log($(currWorkExp + ".experience-content-item"));
-        $(currWorkExp + " .experience-list-item").removeClass("active");
-        $(this).addClass("active");
-        $(currWorkExp + " .experience-content-item").removeClass("active");
-        $(name).addClass("active");
+    $(".experience-list-item").each(function(){
+        const curr_exp_list = $(this);
+        $( this ).find("h4").click(function(){
+            curr_exp_list.toggleClass("active");
+        })
+        // $(currWorkExp + " .experience-list-item").removeClass("active");
     });
 
 };

@@ -642,6 +642,11 @@ section.de-active {
 .header-flex {
     max-width: 1100;
     height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1298,6 +1303,11 @@ section.de-active {
     /* border:1px solid rgba(0, 0, 0, 0.2)  */
 }
 .skill-flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     background-color: var(--white-text-color);
@@ -1321,11 +1331,21 @@ section.de-active {
 }
 
 .skill-flexbox .skill-level {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
 }
 
 .skill-flexbox .skill-name {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1622,6 +1642,11 @@ section.de-active {
 
 
 .row-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
 }

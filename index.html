@@ -1,81 +1,1280 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <!-- Style Sheets -->
-        <link rel="stylesheet" type="text/css" href="Resources/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="Resources/css/media-queries.css">
-        <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-        <title>Paula Castillero</title>
-    </head>
-    <body>
-        <section id="header" class="header">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">  
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="Resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-eduaction.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-experience.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-skills.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-header.css">
+    
+    <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
+      
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script> -->
+    <title>Paula Castillero</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul class="main-nav">
+            <li><a href="#" to="idabout-id" class="nav-btn">About Me</a></li>
+            <li><a href="#" to="idprojects-id" class="nav-btn">My projects</a></li>
+            <li><a href="#" to="ideducation-id" class="nav-btn">My education journey</a></li>
+            <li><a href="#" to="idwork-id" class="nav-btn">Some of my experience</a></li>
+            <li><a href="#" to="idskills-id" class="nav-btn">Skills I've developped</a></li>
+            <li><a href="#" to="idcontact-id" class="nav-btn">Contact me!</a></li>
+        </ul>
             
-                <h1 id="hi">
-                    Hi, I am
-                </h1>
-        
-                <h1 id="who-am-I">
-                    
-                    
-                </h1>
-            
-
-            
-        </section>
-        <div class="download-options">
-            <button  class="btn-style btn-outline">Download PDF Portfolio</button>
-            <button id="view-portfolio" class="btn-style btn-fill">View full online resume</button>
+    </div>
+    <section id="header" class="header">
+        <div class="header-big-words">
+            <h1 class="header-animated-word design">design</h1>
+            <h1 class="header-animated-word engineering">engineering</h1> 
+            <h1 class="header-animated-word coding">coding</h1> 
         </div>
         
-            <!-- <section class="about-me invisible">
-                <div class="col span-1-of-2">
-                    <p>hi</p>
+        <div class="header-flex">
+            <div class="header-photo"></div>
+            <div class="header-flex-text">
+                <h1 id="hi"></h1>
+                <h1 id="who-am-I"></h1>
+                <p id="description-me"></p>
+                <div class="download-options">
+                        <button  class="btn-style btn-outline">Download CV</button>
+                        <button id="view-portfolio" class="btn-style btn-fill">Download PDF Portfolio</button>  
                 </div>
-                <div class="col span-1-of-2 image">
-    
-                </div>
-            </section> 
-        </div> -->
+                
+            </div>
+        </div>
+
         
-        <!-- <div class="main-nav-div">
-            <div class="main-nav">
-                <ul class="main-nav-li clearfix">
-                    <li><a class="main-nav-element" href="#">Paula</a></li>
-                    <li><a class="main-nav-element" href="#">Paula</a></li>
-                    <li><a class="main-nav-element" href="#">Paula</a></li>
-                    <li><a class="main-nav-element" href="#">Paula</a></li>
-                    <li><a class="main-nav-element" href="#">Paula</a></li>
-                </ul>
+        
+        
+
+        <!-- <h1 id="who-am-I">
+            
+            
+        </h1> -->
+<!-- 
+        <div class="header-proj-images-cont">
+            <div class="header-proj-img up-by-0">
+
+            </div>
+            <div class="header-proj-img down-by-40">
+                
+            </div>
+            <div class="header-proj-img up-by-30">
+                
+            </div>
+            <div class="header-proj-img down-by-10">
+                
             </div>
         </div> -->
 
         
-        <!-- GSAP scripts -->
-        <script src="Resources/js/gsap.min.js"></script>
-        <script src="Resources/js/ScrollTrigger.min.js"></script>
-        <script src="Resources/js/MotionPathPlugin.min.js"></script>
-
-        <!-- JQuery scripts -->
-        <script src="Resources/js/jquery-3.5.1.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-        <script src="https://code.jquery.com/jquery-migrate-3.3.1.js"></script> -->
         
-        <!-- SWIPED-EVENTS -->
-        <script type="text/javascript" src="Resources/js/swiped-events.js"></script>
+    
+    </section>
 
-        <script type="text/javascript" src="Resources/js/typed.min.js"></script>
+        <!-- <div class="scrolling-word" data-paroller-factor="10" 
+        data-paroller-factor-xs="10" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 10%; opacity: 0.6">
+            coding
+        </div>
 
-        <!-- Personal Scripts -->
-        <script src="Resources/js/main.js"></script>
+        <div class="scrolling-word" data-paroller-factor="13" 
+        data-paroller-factor-xs="12" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 20%;">
+            HCD
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 5%;">
+            spain
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 7%; opacity: 0.6;">
+            imperial
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 40%; bottom: -300px">
+            london
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 40%; bottom: -300px">
+            AI
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="5" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 45%; bottom: -700px">
+            madrid
+        </div> -->
+
+        <!-- <div class="scrolling-word" data-paroller-factor="7" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 40%; bottom: -700px">
+            UX
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="5" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 20%; bottom: -100px">
+            CAD
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="13" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="left: 25%; bottom: -500px; opacity: 0.1;">
+            3D printing
+        </div>
+
+        <div class="scrolling-word" data-paroller-factor="3" 
+        data-paroller-factor-xs="7" data-paroller-type="foreground" 
+        data-paroller-direction="vertical" data-paroller-transition="transform .2s linear" id="header" class="header"
+        style="right: 5%; bottom: -300px">
+            adobe
+        </div> -->
+
+    <!-------------------------------------------->
+    <!-----------------ABOUT ME------------------->
+    <!-------------------------------------------->
+    <section id="about-id" class="about-me">
+        <div class="scroll-to-see">
+            <p><ion-icon name="arrow-down-circle-outline"></ion-icon><span>Scroll to see my online portfolio!</span></p>
+        </div>
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-white" >01</h1>
+                <h2 class="slide-up-heading">About me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-3-of-5">
+                <p class="smaller-width">Hello! My name is Paula Castillero Garcia. I am a spanish 20 year-old currently studying third year Design Engineering at Imperial.</p>
+                <p class="smaller-width">
+                    Throughout my life I've moved around quite a bit. I lived in Madrid until I was 10 years old. Then, I moved to Dubai, where I lived until I graduated from high school in 2019. 
+                    Now, I am in London for my higher education journey!
+                </p>
+                <p class="smaller-width">
+                    During my time in Dubai, I was exposed to an international and innovative world. 
+                    This made me develop a passion for the complexity, creativity, and unpredictability of tech (especially that which is designed for people).
+                    I am now excited to begin my professional journey in this sector and be able to contribute to its progress.
+                </p>
+                <br>
+                
+            </div>
+            <div class="col span-2-of-5 grad">
+                <img class="grad-pic" src="Resources/img/grad-pic.jpg">
+            </div>  
+        </div>
+       
+        
+    </section>
+    <!-------------------------------------------->
+    <!-----------------PORTFOLIO------------------>
+    <!--------------------------------------------> 
+    <section id="projects-id" class="projects">
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-gray">02</h1>
+                <h2 class="slide-up-heading">My projects</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div id="project-menu" class="project-selector clearfix">
+                <div class="indicator">
+
+                </div>
+                <div class="project-selector-option" percentage-left="0" select="*">
+                    <p>All</p>
+                </div>
+                <div class="project-selector-option" percentage-left="25" select=".university">
+                    <p>University</p>
+                </div>
+                <div class="project-selector-option" percentage-left="50" select=".professional">
+                    <p>Professional</p>
+                </div>
+                <div class="project-selector-option" percentage-left="75" select=".personal">
+                    <p>Personal</p>
+                </div>
+                
+            </div>
+        </div>
 
         
-    </body>
-</html>
+
+        <div id="project-grid" class="row projects-container">
+            <div class="university project" link_address="nintendo_rev.html" next_link_address="gizmo_fourse.html" project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/project_imgs/nintendo_rev_cover 2.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/project_imgs/nintendo_rev_logo-01.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Nintendo Rev</h3>
+                    <p class="project-date">Jan 2021 - June 2021</p>
+                    <p class="smaller-text">
+                       Nintendo inspired physical and virtual game to motivate children to do exercise at home.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="university project" link_address="gizmo_fourse.html" next_link_address="tandem_bike.html" project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/gizmo_project.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/fourse_logo-01.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Fourse</h3>
+                    <p class="project-date">Jan 2021 - Apr 2021</p>
+                    <p class="smaller-text">
+                        A cardboard robot that translates morse code and types into a computer keyboard.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- TANDEM BIKE -->
+
+            <div class="university project" link_address="tandem_bike.html" next_link_address="acasa.html" project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/tandem_bike.JPG">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <img src="Resources/img/project_imgs/tandem_logo-01.png">
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Tandem Bicycle</h3>
+                    <p class="project-date">Mar 2021 - Apr 2021</p>
+                    <p class="smaller-text">
+                        CAD model on Solidworks of a tandem bike frame analysed using Finite Element Analysis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACASA -->
+
+            <div class="university project" link_address="acasa.html" next_link_address="tetris.html" project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/acasa_project-01.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <img src="Resources/img/project_imgs/acasa_logo-01.png">
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Acasa</h3>
+                    <p class="project-date">Oct 2020 - Dec 2020</p>
+                    <p class="smaller-text">
+                        System of delivering home cleaning products to the home in 2050, focusing on sustainability.
+                    </p>
+                </div>
+            </div>
+
+            <!-- TETRIS -->
+
+            <div class="professional project" link_address="tetris.html" next_link_address="angard.html" project-type="professional">
+                <div class="project-img">
+                    <img src="Resources/img/project_imgs/tetris_cover.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/project_imgs/tetris_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Tetris</h3>
+                    <p class="project-date">Jul 2020 - Aug 2020</p>
+                    <p class="smaller-text">
+                        A functional programming approach to tetris, to be used as an exemplary project for university module.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- ANGARD -->
+
+            <div class="university project" link_address="angard.html"  project-type="university">
+                <div class="project-img">
+                    <img src="Resources/css/img/angard-project.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <img src="Resources/img/angard.png">
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Angard</h3>
+                    <p class="project-date">Jan 2020 - June 2020</p>
+                    <p class="smaller-text">
+                        A human-centered electronic design built into the steering wheel to prevent drowsiness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- QUIZZARD -->
+
+            <div class="university project" link_address="quizzard.html"  project-type="university">
+                <div class="project-img">
+                    <img src="Resources/css/img/quizzard.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <img src="Resources/img/quizzard.png">
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Quizzard</h3>
+                    <p class="project-date">May 2020 - Jun 2020</p>
+                    <p class="smaller-text">
+                        Web app to gamify remote classes, teachers can create and share quizzes to be completed life as a race.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SHAZAM REBRAND -->
+
+            <div class="university project" link_address="shazam_rebrand.html"  project-type="university">
+                <div class="project-img">
+                    <img src="Resources/img/project_imgs/shazam_cover.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/shazam.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Shazam Rebrand</h3>
+                    <p class="project-date">Nov 2019</p>
+                    <p class="smaller-text">
+                        Rebranding Shazam towards a platform that protects and promotes the creativity of new artists.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FIRST PORTFOLIO -->
+
+            <div class="university project" link_address="first_portfolio.html"  project-type="">
+                <div class="project-img">
+                    <img src="Resources/img/project_imgs/first_port_cover.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <div class="circle">
+                                <img src="Resources/img/quizzard.png">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">First Portfolio</h3>
+                    <p class="project-date">Oct 2019 - Dec 2019</p>
+                    <p class="smaller-text">
+                        My first extensive portfolio with all my work from first term uni (intro to design engineering).
+                    </p>
+                </div>
+            </div>
+
+            <!-- GROCITY -->
+
+            <div class="personal project" link_address="grocity.html"  project-type="personal">
+                <div class="project-img">
+                    <img src="Resources/img/project_imgs/grocity_cover.png">
+                </div>
+                <div class="project-description">
+                    <div class="circle-wrapper">
+                        <div class="circle">
+                            <img src="Resources/img/grocity.png">
+                        </div>
+                    </div>
+                    <h3 class="plain-h3">Grocity</h3>
+                    <p class="project-date">Oct 2017</p>
+                    <p class="smaller-text">
+                        Proposal for a mobile application to order and deliver groceries from your favorite supermarkets.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <!-------------------------------------------->
+    <!----------------EDUCATION------------------->
+    <!-------------------------------------------->
+    <section id="education-id" class="education">
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-white">03</h1>
+                <h2 class="slide-up-heading">Education journey</h2>
+            </div>
+        </div>
+        <div class="row for-timeline">
+            <div class="row timeline">
+                <div class="container">
+                
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <p class="date">2019-2023</p>
+                  
+                        <div class="timeline-content js--fadeInLeft">
+                            <div class="timeline-heading-holder clearfix padded">
+                                <div class="row-flex flex-start align-center">
+                                    <img class="school-logo" src="Resources/img/imperial_work.png">
+                                    <div>
+                                        <h3 class="plain-h3">Imperial College London</h3>
+                                        <p class="tag blue">Undergrad</p>
+                                        <p class="tag gray">MEng</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col span-1-of-5">
+                                    
+                                </div>
+                                <div class="col span-4-of-5">
+                                    
+                                </div>  -->
+                            </div>
+                            <div opens="imperial-academics" class="padded more-info">
+                                <h4>Academics</h4>
+                                <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="imperial-academics" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Year 1 - 74% (First Class)
+                                        <p> Engineering Maths | Production & Materials | Computing 1 | Computing 2 | 
+                                            Human Centered Design Engineering | Solid Mechanics 1 | Electronics 1</p>
+                                    </li>
+                                    <li>
+                                        Year 2 - 72% (First Class)
+                                        <p>
+                                            Data Science | Solid Mechanics 2 | Thermofluids | Sustainable Design Engineering |
+                                            Industrial Design Engineering | Electronics 2 | Gizmo | Finite Element Analysis | Working in Organization 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Year 3 - In the process
+                                        <p>
+                                            Optimization | Robotics 1 | Robotics 2 | Design Engineering Futures | Innovation & Entrepeneurship | 
+                                            Machine Learning | iExplore (The Science of Learning) | Industrial Placement
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div opens="imperial-highlights" class="padded more-info">
+                                <h4>Highlights</h4>
+                                <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="imperial-highlights" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Academic Representative in 2019-20 and 2020-21
+                                    </li>
+                                    <li>
+                                        Old Centralians' Trust Student Activity Award in 2020-21
+                                    </li>
+                                    <li>
+                                        Undergraduate teaching assistant for two modules
+                                    </li>
+                                    <li>
+                                        Module reshaping UROP in summer of 2020
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+
+                
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <p class="date">2014-2019</p>
+                  
+                        <div class="timeline-content js--fadeInLeft">
+                            <div class="timeline-heading-holder clearfix padded">
+                                <div class="row-flex flex-start align-center">
+                                    <img class="school-logo" src="Resources/img/dia.png">
+                                    <div>
+                                        <h3 class="plain-h3">Dubai International Academy</h3>
+                                        <p class="tag blue">Secondary</p>
+                                        <p class="tag gray">IB</p>  
+                                    </div>
+
+                                </div> 
+                            </div>
+                            <div opens="dia-academics" class="padded more-info">
+                                <h4>Academics</h4>
+                                <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="dia-academics" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Diploma Program - 39/45
+                                        <p> Mathematics HL | Physics HL | French HL | Computer Science SL | 
+                                            English LangLit SL | Economics SL</p>
+                                    </li>
+                                    <li>
+                                        Middle Years Program - 52/56
+                                        <p>
+                                            Mathematics | Physics | Chemistry | Digital Design |
+                                            English | Economics | French 
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div opens="dia-highlights" class="padded more-info">
+                                <h4>Highlights</h4>
+                                <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="dia-highlights" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Winner of National Mobile app design and creation in 2018 
+                                    </li>
+                                    <li>
+                                        Participant of coding competition
+                                    </li>
+                                    <li>
+                                        Participant of Model United Nations (MUN)
+                                    </li>
+                                    <li>
+                                        Part of swim team for five last years
+                                    </li>
+                                    <li>
+                                        20+ Academic Achievement/Most Improved Awards
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+
+                                    
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <p class="date">2012-2014</p>
+                  
+                        <div class="timeline-content js--fadeInLeft">
+                            
+                            <div class="timeline-heading-holder clearfix padded">
+                                <div class="row-flex flex-start align-center">
+                                    <img class="school-logo" src="Resources/img/ris.png">
+                                    <div>
+                                        <h3 class="plain-h3">Regent International School</h3>
+                                        <p class="tag blue">Primary</p>
+                                        <p class="tag gray">British</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div opens="ris-academics" class="padded more-info">
+                                <h4>Academics</h4>
+                                <div  class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="ris-academics" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Year 6 & 7 - British Curriculum
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div opens="ris-highlights" class="padded more-info">
+                                <h4>Highlights</h4>
+                                <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="ris-highlights" class="padded extra-info invisible">
+                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
+                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                            </div> -->
+                        </div>
+                    </div> 
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <p class="date">2005-2012</p>
+                  
+                        <div class="timeline-content js--fadeInLeft">
+                            
+                            <div class="timeline-heading-holder clearfix padded">
+
+                                <div class="row-flex flex-start align-center">
+                                    <img class="school-logo" src="Resources/img/valdefuentes.png">
+                                    <div>
+                                        <h3 class="plain-h3">Valdefuentes</h3>
+                                        <p class="tag blue">Primary</p>
+                                        <p class="tag gray">Spanish</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div opens="valde-academics" class="padded more-info">
+                                <h4>Academics</h4>
+                                <div class="drop-down-icon clearfix"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="valde-academics" class="padded extra-info invisible">
+                                <ul>
+                                    <li>
+                                        Year 1 to Year 5 - Spanish Curriculum
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div  opens="valde-highlights" class="padded more-info">
+                                <h4>Highlights</h4>
+                                <div  class="drop-down-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                            <div id="valde-highlights" class="padded extra-info invisible">
+                                <p>Ready to go to uni in a new country... which would never have happened if we never moved to Dubai.
+                                    In Spain, I just wanted to be close to family, but in Dubai you learn to seek opportunities all over the world.</p>
+                            </div> -->
+                        </div>
+                    </div>     
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------->
+    <!-------------------WORK--------------------->
+    <!-------------------------------------------->
+    <section id="work-id" class="work">
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-gray">04</h1>
+                <h2 class="slide-up-heading">Some of my experience</h2>
+            </div>
+        </div>
+        <div class="carousel owl-carousel owl-theme">
+            <div id="imperial-job" class="work-exp">
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/imperial_work.png">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Imperial College London</h3>
+                        <p class="project-date">1 yr 9 mos</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="experience-list">
+                        <div name="comp-UTA" work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Computing Teaching Assistant
+                            </h4>
+                            <p class="smaller-text">
+                                May 2021 - Present • 2 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role was to bi weekly tutor a group of 10 freshers in the Computing 2 module.
+                                            I had to help with weekly tutorial activities and their end of module project.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                        
+                        <div name="second-rep" work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Second Year Academic Representative
+                            </h4>
+                            <p class="smaller-text">
+                                Oct 2020 - Jul 2021 • 10 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This volunteering role required me to regularly check on my cohort and raise any problems to module leaders.
+                                            I worked alongside the wellbeing rep to ensure a good uni and academic experience for our peers.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Maths Teaching Assistant
+                            </h4>
+                            <p class="smaller-text">
+                                Oct 2020 - Apr 2020 • 6 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role was to  weekly tutor a group of 10 freshers in the Mathematics for engineers module.
+                                            I had to help with weekly tutorial activities and to understand the concepts.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                Design Engineering Summer Student Shaper
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Aug 2020 • 1 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I worked alongise other students and module leaders to reshape two modules (Maths and Computing 1) in a five-week period.
+                                            We used our experience as students to redesign activities, projects and create sample projects.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div work-exp="imperial-job" class="experience-list-item">
+                            <h4>
+                                First Year Academic Representative
+                            </h4>
+                            <p class="smaller-text">
+                                Oct 2019 - Jul 2020 • 10 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This volunteering role required me to regularly check on my cohort and raise any problems to module leaders.
+                                            I worked alongside the wellbeing rep to ensure a good uni and academic experience for our peers.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- --------- -->
+            <!-- TUTORING -->
+            <!-- --------- -->
+
+            <div id="tutor-job" class="work-exp hover">
+
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/web-icon_tutoring.svg">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Freelance Work</h3>
+                        <p class="project-date">3 yrs 7 mos</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Website Designing & Developing
+                            </h4>
+                            <p class="smaller-text">
+                                Sep 2021 - Present • 1 mon
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I have started doing side jobs designing and developing websites to optimize UX for my clients.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Private tutoring for IB
+                            </h4>
+                            <p class="smaller-text">
+                                Dec 2017 - Present • 3 yrs 9 mos
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            I work as a general private tutor for IB subjects (primarily Computer Science, Maths, and Physics). 
+                                            My role is to help understand the concepts and train students how to answer questions.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!------------------->
+            <!---BRIGHT NETWORK-->
+
+            <div class="work-exp hover">
+                <div class="row-flex flex-start align-center">
+                    <img class="work-logo" src="Resources/img/logo_img/brightnetwork.png">
+                    <div class="work-heading-holder">
+                        <h3 class="plain-h3">Bright Network</h3>
+                        <p class="project-date">2 weeks</p>
+                    </div>
+                </div>
+               
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Technology Internship Experience
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Present • 1 week
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This was a work shadowing experience where I got insight into the tech industry. 
+                                            We learnt about networking as well as the latest tech trends. 
+                                            We then completed a project plan on implementing a facial verification service into a bank.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <h4>
+                                Consultancy Internship Experience
+                            </h4>
+                            <p class="smaller-text">
+                                Jul 2020 - Present • 1 week
+                            </p>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This was a work shadowing experience where I got insight into the consultancy industry. 
+                                            We learnt about networking as well as the work ethics at top companies. 
+                                            We then completed a proposal on adding a customer loyalty scheme into a chocolate brand of our choice.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="work-exp hover">
+                <div class="work-heading-holder">
+                    <h3 class="plain-h3">High School Internships</h3>
+                    <p class="project-date">2 weeks</p>
+                </div>
+                <div>
+                    <div class="experience-list">
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center flex-wrap-wrap">
+                                <img src="Resources/img/logo_img/eaton.png">
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
+                                    <h4>
+                                        Eaton
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Jul 2019 • 2 weeks
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            My role during this internship/work shadowing experience was to understand the operations of the company (from CAD to sales).
+                                            Then I helped translate client presentations from Spanish to English with the industry knowledge I gained.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center">
+                                <img class="ios-strech-fix" src="Resources/img/logo_img/nokia_white_logo.png">
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
+                                    <h4>
+                                        Nokia
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Apr 2018 • 1 week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            This one week work shadowing experience was an insight into the telecommunications industry.
+                                            I was taken along each section of the company and learned about how their networking process works as well
+                                            as how to lead and manage a project.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
+                            <div class="row-flex flex-start align-center">
+                                <img src="Resources/img/logo_img/ibm.png">
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
+                                    <h4>
+                                        IBM Design Studio
+                                    </h4>
+                                    <p class="smaller-text">
+                                        Jun 2018 • 1 week
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="see-more">
+                                <div class="see-more-inside">
+                                    <div class="see-more-info">
+                                        <p>
+                                            During this internship, I was set a task of creating a website that aids in helping students choose their university degree.
+                                            I had to come up with a user persona, user journey etc. to create an optimized design. I then had to present my outcome to the team.
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+    </section>
+    <!-------------------------------------------->
+    <!------------------SKILLS-------------------->
+    <!-------------------------------------------->
+    <section id="skills-id" class="skills">
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-white">05</h1>
+                <h2 class="slide-up-heading">Skills I've developed</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h3>2D/3D modelling</h3>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <div class="skill-name">
+                        <img src="Resources/img/solidworks.png">
+                        <p>Solidworks</p>
+                    </div>
+                </div>
+                <div class="skill-flexbox">
+                    <img src="Resources/img/fusion360.png">
+                    <p>Fusion 360</p>
+                </div>
+                <div class="skill-flexbox">
+                    <img src="Resources/img/sketching.png">
+                    <p>Sketching by hand</p>
+                </div>
+            </div>
+            
+            
+            
+
+        </div>
+        <div class="row">
+            <h3>Prototyping and component selection</h3>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/white.png">
+                    <p>Medium/rapid prototyping</p>
+                </div>
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/white.png">
+                    <p>Functional Modelling</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="row">
+            <h3>Rendering and graphic design</h3>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/solidworks-visualize.png">
+                    <p>Soliworks Visualize</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/blender.png">
+                    <p>Blender</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/keyshot.png">
+                    <p>Keyshot</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/dimensions.png">
+                    <p>Dimensions</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/adobe.png">
+                    <p>Adobe InDesign, Illustrator, Photoshop, XD</p>
+                </div>
+
+                
+                <div class="skill-flexbox">
+                    <img src="Resources/img/sketch.png">
+                    <p>Sketch</p>
+                </div>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        <div class="row">
+            <h3>Video Production and animation</h3>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/blender.png">
+                    <p>Blender</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/keyshot.png">
+                    <p>Keyshot</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/premiere-pro.png">
+                    <p>Premiere Pro</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/after-effects.png">
+                    <p>After Effects</p>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+        <div class="row">
+            <h3>Coding and Simulation</h3>
+            <div class="skills-grid-container">
+                <div class="skill-flexbox">
+                    <img src="Resources/img/python.png">
+                    <p>Python</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/matlab.png">
+                    <p>MatLab</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/solidworks.png">
+                    <p>Soliworks Simulation</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/logo_img/arduino.png">
+                    <p>Arduino</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/java.webp">
+                    <p>Java</p>
+                </div>
+
+                <div class="skill-flexbox">
+                    <img src="Resources/img/javascript.png">
+                    <p>Javascript</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <h3>Languages</h3>
+                <div class="shadow-holder">
+                    <h4>Spanish</h4>
+                    <h6>Mother tongue</h6>
+                    <img class="flag-img" src="Resources/img/spain.svg"></img>
+                </div>
+                <div class="shadow-holder slide-left">
+                    <h4>English</h4>
+                    <h6>Fluent</h6>
+                    <img class="flag-img" src="Resources/img/uk.svg"></img>
+                </div>
+                <div class="shadow-holder">
+                    <h4>French</h4>
+                    <h6>C2</h6>
+                    <img class="flag-img" src="Resources/img/french.svg"></img>
+                </div>
+                <div class="shadow-holder slide-left">
+                    <h4>Italian</h4>
+                    <h6>A2</h6>
+                    <img class="flag-img" src="Resources/img/italy.svg"></img>
+                </div>
+        </div>
+    </section>
+
+
+    <section id="contact-id" class="contact">
+        <div class="row">
+            <div class="heading-holder">
+                <h1 class="number-larger-gray">06</h1>
+                <h2 class="slide-up-heading">Contact me!</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <form action="https://formspree.io/f/xpzkdylo" method="POST">
+                <div class="col span-1-of-2">
+                    <div class="entry">
+                        <label id="name-label" for="name">Name</label>   
+                        <input label="name-label" name="name" id="name" type="text" class="feedback-input" placeholder="" />
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="entry">
+                        <label id = "email-label" for="email">Email</label>   
+                        <input type="email" name="_replyto"label="email-label" id="email" type="text" class="feedback-input" placeholder="" />
+                    </div>  
+                </div>
+                <div class="entry">
+                    <label id="text-label" for="comments" >Your message</label>
+                    <textarea  name="message" label="text-label" id="comments" class="feedback-input" placeholder=""></textarea>  
+                </div>
+                <input class="btn-style btn-fill" id="submit" type="submit" value="Send"/>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skills</a></li> 
+                    <li><a href="#">My Projects</a></li>
+                </ul>
+
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row"></div>
+            <p>
+                Copyright &copy; 2020 by Paula Castillero. All rights reserved. This entire website was coded by myself.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    
+     <!-- GSAP scripts -->
+     <script src="Resources/js/gsap.min.js"></script>
+     <script src="Resources/js/ScrollTrigger.min.js"></script>
+     <script src="Resources/js/MotionPathPlugin.min.js"></script>
+
+     <!-- JQuery scripts -->
+     <script src="Resources/js/jquery-3.5.1.js"></script>
+     <script src="Resources/js/jquery.easypiechart.min.js"></script>
+
+
+     <script src="owlcarousel/owl.carousel.min.js"></script>
+     
+     <!-- Personal Scripts -->
+     <script src="Resources/js/paula-main.js"></script>
+
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+     
+
+    <!-- PAROLLER PARALAX -->
+
+    <script src="Resources/js/jquery.paroller.min.js"></script>
+
+    <!-- ISOTOPE -->
+    <script type="text/javascript" src="Resources/js/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- SWIPED-EVENTS -->
+    <script type="text/javascript" src="Resources/js/swiped-events.js"></script>
+
+    <script type="text/javascript" src="Resources/js/typed.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>

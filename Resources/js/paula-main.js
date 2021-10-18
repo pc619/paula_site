@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $("#view-portfolio").click(function () {
         console.log("hi");
-        window.location.href = "paula_castillero.html";
+        window.location.href = "index.html";
     });
 });
 

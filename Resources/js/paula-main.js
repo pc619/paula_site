@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 
     let typedOne = new Typed("#hi", {
-        strings: ["","Hey,"],
+        strings: ["","Hello,"],
         typeSpeed: 50,
         loop: false,
         startDelay: 100,
@@ -40,8 +40,8 @@ $(document).ready(function () {
     });
 
     let typedTwo = new Typed("#description-me", {
-        strings: ["","I'm a design engineer at Imperial College London!"],
-        typeSpeed: 20,
+        strings: ["","I'm a design engineer. I love to design innovative solutions with a storytelling element to provide seamless user experiences."],
+        typeSpeed: 35,
         loop: false,
         startDelay: 2000,
         showCursor: false

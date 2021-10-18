@@ -1,0 +1,164 @@
+@media all and (max-width: 1130px) {
+  
+    .header-flex {
+        max-width: 800px;
+    }
+
+    .header-photo {
+        width: 35%;
+    }
+
+    .header-animated-word {
+
+        font-size: 900%;
+        
+    }
+}
+
+
+/* CHANGING THE PROJECT PAGES YOU CAN'T NAVIGATE BETWEEN THEM ANYMORE :( */
+
+@media all and (max-width: 900px) {
+
+    .header-animated-word {
+
+        font-size: 800%;
+        
+    }
+
+    .header-animated-word.coding {
+        top: 180px;
+        left: 300px;
+    }
+}
+
+@media all and (max-width: 830px) {
+
+    .header-flex {
+        margin: 0 5% 0 5%;
+        height: auto;
+        flex-flow: wrap;
+    }
+
+    .header-photo {
+        margin: 0 auto 40px auto;
+    }
+
+    .header-flex-text {
+        min-width: 100%;
+        width: 100%;
+        
+    }
+
+    .header-flex-text h1,
+    .header-flex-text p {
+        text-align: center;
+
+    }
+
+    .download-options{
+        text-align:center;
+    }
+
+    
+
+}
+
+@media all and (max-width: 700px) {
+    .header {
+        padding-bottom: 20px;
+        height: 80vh;
+    }
+
+    .header-animated-word {
+
+        font-size: 800%;
+        
+    }
+
+    .header-animated-word.coding {
+        top: 180px;
+        left: -50px;
+    }
+
+    .header-animated-word.design {
+        top: 20px;
+        left: 60px;
+    }
+    
+    .header-animated-word.engineering {
+        bottom: 50px;
+        left: 30px;
+    }
+}
+   
+
+@media all and (max-height: 850px) {
+    .header {
+        padding-bottom: 10px;
+        height: 72vh;
+    }
+
+   
+}
+
+@media all and (max-width: 630px) {
+
+    .header-photo {
+       width: 50%;
+    }
+    
+    .header-flex {
+        margin: 0 6% 0 6%;
+        height: auto;
+    }
+
+    .scroll-to-see span{
+        display: none;
+    }
+
+    
+}
+
+@media all and (max-width: 500px) {
+
+    .header h1 {
+        margin-bottom: 5px;
+        
+    }
+
+    .header-photo {
+        margin: 0 auto 20px auto;
+        width: 45%;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    #hi {
+        font-size: 200%;
+        -webkit-text-stroke: 1px var(--black-text-color);
+    }
+
+    #who-am-i {
+        font-size: 220%;
+    }
+
+    #description-me {
+        margin-left: 0;
+        font-size: 68%;
+        line-height: 1.5;
+        font-weight: 400;
+
+    }
+
+    .header .btn-style {
+        padding: 10px 10px;
+        font-size: 50%;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+}

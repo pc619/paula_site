@@ -11,6 +11,8 @@
 
 .row, .project-row, .row-for-bullets {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	height: auto;
+
 }
 
 .row:before,

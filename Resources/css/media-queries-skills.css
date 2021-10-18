@@ -12,4 +12,39 @@
         grid-template-columns: 1fr;
         /* border:1px solid rgba(0, 0, 0, 0.2)  */
     }
+
+    
 }
+
+@media all and (max-width:500px) {
+    .shadow-holder {
+        height: 140px;
+        width: 140px;
+        padding: 15px;
+    }
+
+    .shadow-holder h4 {
+        margin-bottom: 5px;
+    }
+
+    .flag-img {
+        margin-top: 8px;
+    }
+}
+
+@media all and (max-width:350px) {
+    .shadow-holder {
+        height: 130px;
+        width: 130px;
+        padding: 12px;
+    }
+
+    .shadow-holder h4 {
+        margin-bottom: 4px;
+    }
+
+    .flag-img {
+        margin-top: 7px;
+    }
+}
+

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-eduaction.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-experience.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-skills.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media-queries-header.css">
     
     <link rel="icon" type="svg" href="Resources/img/web-icon.svg" sizes="350x350">
       
@@ -35,19 +36,23 @@
             
     </div>
     <section id="header" class="header">
-        <h1 class="header-animated-word design">design</h1>
-        <h1 class="header-animated-word engineering">engineering</h1> 
-        <h1 class="header-animated-word coding">coding</h1> 
+        <div class="header-big-words">
+            <h1 class="header-animated-word design">design</h1>
+            <h1 class="header-animated-word engineering">engineering</h1> 
+            <h1 class="header-animated-word coding">coding</h1> 
+        </div>
+        
         <div class="header-flex">
             <div class="header-photo"></div>
-            <div>
+            <div class="header-flex-text">
                 <h1 id="hi"></h1>
                 <h1 id="who-am-I"></h1>
                 <p id="description-me"></p>
                 <div class="download-options">
-                    <button  class="btn-style btn-outline">Download CV</button>
-                    <button id="view-portfolio" class="btn-style btn-fill">Download PDF Portfolio</button>
+                        <button  class="btn-style btn-outline">Download CV</button>
+                        <button id="view-portfolio" class="btn-style btn-fill">Download PDF Portfolio</button>  
                 </div>
+                
             </div>
         </div>
 
@@ -75,9 +80,7 @@
             </div>
         </div> -->
 
-        <div class="scroll-to-see">
-            <p><ion-icon name="arrow-down-circle-outline"></ion-icon>Scroll to see my online portfolio!</p>
-        </div>
+        
         
     
     </section>
@@ -163,6 +166,9 @@
     <!-----------------ABOUT ME------------------->
     <!-------------------------------------------->
     <section id="about-id" class="about-me">
+        <div class="scroll-to-see">
+            <p><ion-icon name="arrow-down-circle-outline"></ion-icon><span>Scroll to see my online portfolio!</span></p>
+        </div>
         <div class="row">
             <div class="heading-holder">
                 <h1 class="number-larger-white" >01</h1>
@@ -171,7 +177,7 @@
         </div>
         <div class="row">
             <div class="col span-3-of-5">
-                <p class="smaller-width">Hello! My name is Paula Castillero Garcia. I am I am a spanish 20 year-old currently studying third year Design Engineering at Imperial.</p>
+                <p class="smaller-width">Hello! My name is Paula Castillero Garcia. I am a spanish 20 year-old currently studying third year Design Engineering at Imperial.</p>
                 <p class="smaller-width">
                     Throughout my life I've moved around quite a bit. I lived in Madrid until I was 10 years old. Then, I moved to Dubai, where I lived until I graduated from high school in 2019. 
                     Now, I am in London for my higher education journey!
@@ -910,7 +916,7 @@
                         <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
                             <div class="row-flex flex-start align-center flex-wrap-wrap">
                                 <img src="Resources/img/logo_img/eaton.png">
-                                <div class="flex-item min-width-50pc padding-top-bottom-4pc">
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
                                     <h4>
                                         Eaton
                                     </h4>
@@ -935,7 +941,7 @@
                         <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
                             <div class="row-flex flex-start align-center">
                                 <img class="ios-strech-fix" src="Resources/img/logo_img/nokia_white_logo.png">
-                                <div>
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
                                     <h4>
                                         Nokia
                                     </h4>
@@ -959,7 +965,7 @@
                         <div name="priv-tutor" work-exp="tutor-job" class="experience-list-item">
                             <div class="row-flex flex-start align-center">
                                 <img src="Resources/img/logo_img/ibm.png">
-                                <div>
+                                <div class="flex-item min-width-50pc padding-top-bottom-10px">
                                     <h4>
                                         IBM Design Studio
                                     </h4>
@@ -1005,39 +1011,14 @@
                         <img src="Resources/img/solidworks.png">
                         <p>Solidworks</p>
                     </div>
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
                 </div>
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/fusion360.png">
-                        <p>Fusion 360</p>
-                    </div>
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/fusion360.png">
+                    <p>Fusion 360</p>
                 </div>
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/sketching.png">
-                        <p>Sketching by hand</p>
-                    </div>
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/sketching.png">
+                    <p>Sketching by hand</p>
                 </div>
             </div>
             
@@ -1049,32 +1030,12 @@
             <h3>Prototyping and component selection</h3>
             <div class="skills-grid-container">
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/white.png">
-                        <p>Medium/rapid prototyping</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/white.png">
+                    <p>Medium/rapid prototyping</p>
                 </div>
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/white.png">
-                        <p>Functional Modelling</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                    </div>
+                    <img src="Resources/img/logo_img/white.png">
+                    <p>Functional Modelling</p>
                 </div>
             </div>
             
@@ -1084,93 +1045,34 @@
             <h3>Rendering and graphic design</h3>
             <div class="skills-grid-container">
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/solidworks-visualize.png">
-                        <p>Soliworks Visualize</p>
-                    </div>
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/solidworks-visualize.png">
+                    <p>Soliworks Visualize</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/blender.png">
-                        <p>Blender</p>
-                    </div>
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/blender.png">
+                    <p>Blender</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/keyshot.png">
-                        <p>Keyshot</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/keyshot.png">
+                    <p>Keyshot</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/dimensions.png">
-                        <p>Dimensions</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/dimensions.png">
+                    <p>Dimensions</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/adobe.png">
-                        <p>Adobe InDesign, Illustrator, Photoshop, XD</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                    </div>
+                    <img src="Resources/img/logo_img/adobe.png">
+                    <p>Adobe InDesign, Illustrator, Photoshop, XD</p>
                 </div>
 
                 
-
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/sketch.png">
-                        <p>Sketch</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                    </div>
+                    <img src="Resources/img/sketch.png">
+                    <p>Sketch</p>
                 </div>
 
             </div>
@@ -1185,63 +1087,23 @@
             <h3>Video Production and animation</h3>
             <div class="skills-grid-container">
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/blender.png">
-                        <p>Blender</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/blender.png">
+                    <p>Blender</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/keyshot.png">
-                        <p>Keyshot</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/keyshot.png">
+                    <p>Keyshot</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/premiere-pro.png">
-                        <p>Premiere Pro</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/premiere-pro.png">
+                    <p>Premiere Pro</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/after-effects.png">
-                        <p>After Effects</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/after-effects.png">
+                    <p>After Effects</p>
                 </div>
             </div>
             
@@ -1253,93 +1115,33 @@
             <h3>Coding and Simulation</h3>
             <div class="skills-grid-container">
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/python.png">
-                        <p>Python</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/python.png">
+                    <p>Python</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/matlab.png">
-                        <p>MatLab</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/matlab.png">
+                    <p>MatLab</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/solidworks.png">
-                        <p>Soliworks Simulation</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/solidworks.png">
+                    <p>Soliworks Simulation</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/logo_img/arduino.png">
-                        <p>Arduino</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/logo_img/arduino.png">
+                    <p>Arduino</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/java.webp">
-                        <p>Java</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <img src="Resources/img/java.webp">
+                    <p>Java</p>
                 </div>
 
                 <div class="skill-flexbox">
-                    <div class="skill-name">
-                        <img src="Resources/img/javascript.png">
-                        <p>Javascript</p>
-                    </div>
-                    
-                    <div class="skill-level">
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                        <span class="blue"></span>
-                    </div>
+                    <img src="Resources/img/javascript.png">
+                    <p>Javascript</p>
                 </div>
             </div>
             
@@ -1348,7 +1150,7 @@
             <h3>Languages</h3>
                 <div class="shadow-holder">
                     <h4>Spanish</h4>
-                    <h6>Mothertongue</h6>
+                    <h6>Mother tongue</h6>
                     <img class="flag-img" src="Resources/img/spain.svg"></img>
                 </div>
                 <div class="shadow-holder slide-left">

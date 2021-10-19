@@ -2496,13 +2496,15 @@ textarea {
 .results-table tr.hoverable:hover {background-color: #f5f5f5;}
 
 /*--------- PROJECT COVERS FOR EACH PAGE ---------*/
-
-
-.project-header.fourse{
-    background-image: url("../img/project_imgs/tetris_cover.png");
+.project-header {
     background-size: cover;
     background-position: center;
 
+}
+
+.project-header.fourse{
+    background-image: url("../img/project_imgs/tetris_cover.png");
+    
 }
 
 .project-header.tandem{
@@ -2523,5 +2525,11 @@ textarea {
     background-image: url("../img/project_imgs/tetris_pr_cover.png");
     background-size: cover;
     background-position: center;
+
+}
+
+
+.project-header.nintendo_rev{
+    background-image: url("img/ninendo-rev-cover-01.png");
 
 }

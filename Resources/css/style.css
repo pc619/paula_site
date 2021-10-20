@@ -2513,6 +2513,15 @@ textarea {
     
 }
 
+.project-header.quizzard {
+    background-image: url("img/quizzard-cover.png");
+
+}
+
+.project-header.acasa {
+    background-image: url("img/acasa-01.png");
+
+}
 .project-header.tandem{
     background-image: url("img/tandem_bike.JPG");
     background-size: cover;

@@ -76,6 +76,41 @@ const initFunct = function () {
         }
     });
 
+    $("#nanogallery-acasa").nanogallery2({
+        items: [
+            { src: "Resources/img/acasa_img/dispenser.jpeg", srct: "Resources/img/acasa_img/dispenser.jpeg" },
+            { src: "Resources/img/acasa_img/acasa_Page_03.jpg", srct: "Resources/img/acasa_img/acasa_Page_03.jpg"},
+            { src: "Resources/img/acasa_img/acasa_Page_04.jpg", srct: "Resources/img/acasa_img/acasa_Page_04.jpg" },
+            { src: "Resources/img/acasa_img/acasa_Page_05.jpg", srct: "Resources/img/acasa_img/acasa_Page_05.jpg" },
+            { src: "Resources/img/acasa_img/acasa_Page_06.jpg", srct: "Resources/img/acasa_img/acasa_Page_06.jpg" },
+            { src: "Resources/img/acasa_img/acasa_Page_07.jpg", srct: "Resources/img/acasa_img/acasa_Page_07.jpg" },
+            { src: "Resources/img/acasa_img/acasa_Page_08.jpg", srct: "Resources/img/acasa_img/acasa_Page_08.jpg" }
+        ],
+
+        thumbnailWidth: "auto",
+        thumbnailHeight:  250,
+        thumbnailGutterWidth: 30,
+        thumbnailGutterHeight: 30,
+        thumbnailBorderHorizontal: 0,
+        thumbnailBorderVertical: 0,
+        thumbnailAlignment: "center",
+        viewerToolbar:    {
+            display:    false },
+        viewerTools:     {
+                topLeft:    "",
+                topRight:   "closeButton"
+        },
+        galleryTheme: {
+            theme: "light"
+          },
+        viewerTheme : { background: '#fff' },
+        icons: {
+            buttonClose: '<ion-icon  style="color: #000;" name="close-outline"></ion-icon>',   // icon for previous image (toolbar)
+            viewerImgNext: '<ion-icon style="font-size:48px; opacity: 50%; color: #000" name="chevron-forward-circle"></ion-icon>',
+            viewerImgPrevious: '<ion-icon style="font-size:48px; opacity: 50%; color: #000"" name="chevron-back-circle"></ion-icon>'
+        }
+    });
+
 
         $(".popup-modal").magnificPopup({
             type: 'iframe'

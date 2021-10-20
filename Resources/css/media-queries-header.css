@@ -109,7 +109,7 @@
     }
     
     .header-flex {
-        margin: 0 6% 0 6%;
+        margin: 0 5% 0 5%;
         height: auto;
     }
 
@@ -137,12 +137,13 @@
     }
 
     #hi {
-        font-size: 200%;
+        font-size: 220%;
         -webkit-text-stroke: 1px var(--black-text-color);
     }
 
-    #who-am-i {
-        font-size: 220%;
+    #who-am-I {
+        font-size: 250%;
+        margin-bottom: 15px;
     }
 
     #description-me {

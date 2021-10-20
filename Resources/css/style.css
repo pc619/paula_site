@@ -197,7 +197,7 @@ h3 {
     margin-left: 100px;
 }
 
-h3::before {
+h3:before {
     content: "";
     display: block;
     width: 90px;
@@ -1124,13 +1124,14 @@ section.de-active {
     margin-top: 40px;
 }
 
-.timeline::before {
+.timeline:before {
     content: '';
     background: var(--dark-gray-color);
     width: 5px;
     height: 100%;
     position: absolute;
     left: 50%;
+    top:0;
     transform: translateX(-50%);
     transition: 0.5s;
 }
@@ -1235,7 +1236,7 @@ section.de-active {
     margin-bottom: 0;
 }
 
-.plain-h3::before {
+.plain-h3:before {
     display: none;
 }
 
@@ -1290,7 +1291,7 @@ section.de-active {
 }
 
 .more-info.reverse .drop-down-icon {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(25%);
 }
 
 .more-info {
@@ -1655,8 +1656,8 @@ section.de-active {
     content:"";
     display: block;
     position: absolute;
-    height: 8;
-    width: 8;
+    height: 8px;
+    width: 8px;
     transform: rotate(45deg);
     top: -4px;
     left: 20px;
@@ -1733,6 +1734,10 @@ section.de-active {
 
 .grid-container.three-cols {
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container.three-cols.onefr-twofr {
+    grid-template-columns: 1fr 2fr;
 }
 
 
@@ -1891,7 +1896,7 @@ section.de-active {
     width: 100%;
 }
 
-.circle-wrapper::before {
+.circle-wrapper:before {
     position: absolute;
     top: 80px;
     top: -5px;
@@ -2503,7 +2508,8 @@ textarea {
 }
 
 .project-header.fourse{
-    background-image: url("../img/project_imgs/tetris_cover.png");
+    background-image: url("img/gizmo-cover-01.png");
+    background-position: center 95%;
     
 }
 
@@ -2530,6 +2536,11 @@ textarea {
 
 
 .project-header.nintendo_rev{
-    background-image: url("img/ninendo-rev-cover-01.png");
+    background-image: url("img/nintendo-rev-cover-01.png");
+
+}
+
+.project-header.angard{
+    background-image: url("img/angard-cover-01.png");
 
 }

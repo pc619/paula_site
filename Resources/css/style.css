@@ -1145,7 +1145,7 @@ section.de-active {
 }
 
 .timeline:before {
-    content: '';
+    content: ' ';
     background: var(--dark-gray-color);
     width: 5px;
     height: 100%;

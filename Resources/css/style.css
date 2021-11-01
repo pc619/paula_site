@@ -263,6 +263,24 @@ li span {
 
 }
 
+.btn-icon {
+    padding: 0;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 150%;
+    transition: color 0.2s;
+    color: var(--black-text-color);
+}
+
+.btn-icon:visited {
+    color: var(--black-text-color);
+}
+
+.btn-icon:hover {
+    color: var(--dark-blue-color);
+}
+
+
 .btn-outline {
     border: solid 1.5px var(--dark-blue-color);
     color: var(--dark-blue-color);

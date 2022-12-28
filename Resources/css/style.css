@@ -2180,8 +2180,9 @@ textarea {
     background-color: white;
     margin: 0px 150px;
     position: relative;
-    width: 1300px;
-    height: 100vh;
+    width: calc(100% - 300px);
+    height: 100%;
+    border: none;
 }
 
 .side-cross {

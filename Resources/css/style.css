@@ -771,8 +771,8 @@ section.de-active {
     font-weight: 700;
 }
 #hi {
-    -webkit-text-stroke: 1.5px var(--black-text-color); /* width and color */
-    color: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-shadow: -1px 1px 1px #000, 1px 1px 1px #000, 1px -1px 0 #000, -1px -1px 0 #000;
     font-size: 280%;
 }
 
@@ -1483,7 +1483,7 @@ section.de-active {
     padding: 4vw 0;
     display: block;
     height: auto;  
-    width: 1000000vw;
+    width: 1000000000vw;
 }
 
 .owl-stage {

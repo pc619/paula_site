@@ -1535,7 +1535,7 @@ section.de-active {
 
 .work-heading-holder h3{
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: -2px;
 }
 
 .work-heading-holder .project-date{

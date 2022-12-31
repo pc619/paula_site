@@ -119,6 +119,7 @@ const initFunct = function () {
 
 
     const projectArray = [
+        "realspace.html",
         "nintendo_rev.html",
         "gizmo_fourse.html",
         "tandem_bike.html",

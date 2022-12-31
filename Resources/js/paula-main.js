@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
 
     let typedTwo = new Typed("#description-me", {
-        strings: ["","I'm a design engineer. I love to design innovative solutions with a storytelling element to provide seamless user experiences."],
+        strings: ["","I'm a design engineer. I want to bring value to the businesses with a creative and seamless customer experience, impacting bottomline and creating opportunities."],
         typeSpeed: 35,
         loop: false,
         startDelay: 2000,

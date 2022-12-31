@@ -136,6 +136,15 @@ section {
     
 }
 
+.in-line-block {
+    display: inline-block;
+}
+
+.drop-down-icon.in-line-block{
+    position: relative;
+    font-size: 120%;
+    transform: translate(10px, 5px);
+}
 /*-------------------------------------------*/
 /* HEADING AND PARAGRAPHS */
 /*-------------------------------------------*/
@@ -1315,10 +1324,13 @@ section.de-active {
 }
 
 .more-info {
-    background-color: var(--gray-color);
-    border-bottom: solid 1px var(--dark-gray-color);
     transition: 0.5s;
     cursor: pointer;
+}
+
+.timeline-content .more-info {
+    background-color: var(--gray-color);
+    border-bottom: solid 1px var(--dark-gray-color);
 }
 
 

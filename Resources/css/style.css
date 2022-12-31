@@ -142,8 +142,8 @@ section {
 
 .drop-down-icon.in-line-block{
     position: relative;
-    font-size: 120%;
-    transform: translate(10px, 5px);
+    /* font-size: 120%;
+    transform: translate(10px, 5px); */
 }
 /*-------------------------------------------*/
 /* HEADING AND PARAGRAPHS */

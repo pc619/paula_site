@@ -140,10 +140,14 @@ section {
     display: inline-block;
 }
 
-.in-line-block .drop-down-icon{
+.drop-down-icon-holder {
+    position: relative;
+    transform: translate(10px, 5px);
+}
+
+.in-line-block .drop-down-icon-holder .drop-down-icon{
     position: relative;
     font-size: 120%;
-    transform: translate(10px, 5px);
 }
 /*-------------------------------------------*/
 /* HEADING AND PARAGRAPHS */

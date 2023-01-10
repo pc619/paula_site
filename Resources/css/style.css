@@ -2237,7 +2237,7 @@ textarea {
     position: fixed;
 }
 
-.project-nav-button.no-hover:hover{
+.project-nav-button.no-hover:hover .st2{
     fill:white;
 }
 

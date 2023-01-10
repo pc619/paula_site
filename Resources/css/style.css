@@ -131,7 +131,7 @@ section {
 }
 
 .invisible {
-    display: none;
+    display: none; 
     visibility: hidden;
     
 }
@@ -2235,6 +2235,10 @@ textarea {
 .project-nav-button {
     display: block;
     position: fixed;
+}
+
+.project-nav-button.no-hover:hover{
+    fill:white;
 }
 
 .st2{
